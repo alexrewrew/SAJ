@@ -1,0 +1,224 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+//@import "../libs/rew-sidenav/sidenav.styl"
+//@import "../libs/rew-downnav/downnav.styl"
+
+nav
+  background $white
+  transitions()
+  padding 24px 0
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 999
+  .button
+    margin-left: 24%;
+    +mobile()
+      margin-left 0
+      margin-bottom 20px
+    +portrait()
+      margin-left 10%
+  +mobile()
+    padding 10px 0
+    .container
+      max-width 100%
+
+nav.open
+  height 100vh
+
+nav.nav-transparent
+  background $trans
+  .button
+    background $trans
+    color $white
+    border-color $white
+    +mobile()
+      background $yellow
+      color $black-text
+      border-color $yellow
+  .menu
+    li
+      a
+        color $white
+        +mobile()
+          color $black-text
+  .nav-panel, .nav-panel-2
+    +mobile()
+      background $white
+  .nav-panel
+    +mobile()
+      margin-top 15px
+
+.nav-panel, .nav-panel-2
+  +mobile()
+    display none
+
+.nav-secondary
+  position: absolute
+  left 0
+  right 0
+  top 89px
+  transform translateX(100vw)
+  transitions()
+  background $white
+  padding 68px 0
+  min-height 100vh
+  +mobile()
+    padding-top 10px
+    top 0px
+  .menu-secondary
+    position relative
+    &:before
+      pseudo(block, absolute)
+      top 0
+      left -99px
+      right auto
+      bottom 0
+      width 1px
+      background $black
+      opacity .1
+      +mobile()
+        display none
+
+.nav-secondary.open
+  transform translateX(0)
+
+.logo
+  display: block
+  max-width 101px
+  img
+    width 100%
+
+.menu
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  +mobile()
+    flex-direction column
+    padding 30px 0
+  li
+    margin-right 39px
+    &:last-child
+      margin-right 0
+    +mobile()
+      margin 0
+    +tablet()
+      margin-right 34px
+    +portrait()
+      margin-right 10px
+    a
+      display block
+      font-size: .875em
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color $black
+      text-transform uppercase
+      padding: 12px 0px;
+      +portrait()
+        font-size .75em
+
+.menu-lang
+  display flex
+  flex-direction column
+  flex-wrap nowrap
+  +mobile()
+    flex-direction row
+    margin-bottom 10px
+  li
+    margin-bottom 31px
+    +mobile()
+      margin-bottom 0
+      margin-right 31px
+    a
+      font-size .875em
+      text-transform uppercase
+      font-weight: 700
+      color $gray-text
+      &:hover
+        color $black
+    .active
+      color $black
+
+.menu-article
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  margin-bottom 28px
+  +mobile()
+    margin-bottom 14px
+  li
+    margin-right 14px
+    margin-bottom 4px
+    +mobile()
+      margin-bottom 0
+    a
+      font-size .75em
+      color $gray-text
+      &:hover
+        color: $blue
+
+.nav-mobile
+  display none
+  +mobile()
+    display block
+
+/* BURGER ICON */
+
+.nav-icon
+  width 40px
+  height 40px
+  position relative
+  background $gray-back2
+  border-radius 50%
+  cursor pointer
+  transitions()
+  transform rotate(0deg)
+  float right
+  span
+    display block
+    position absolute
+    height 3px
+    width calc(100% - 24px)
+    background $black
+    border-radius 2px
+    opacity 1
+    left 12px
+    transform rotate(0deg)
+    transitions()
+    &:nth-child(1)
+      top 14px
+    &:nth-child(2)
+      top 23px
+  //&:hover
+  //  background $trans
+
++mobile()
+  #menu-sub-trigger
+    span
+      left 15px
+      width 12px
+      &:nth-child(1)
+        transform rotate(45deg)
+        top 15px
+      &:nth-child(2)
+        transform rotate(-45deg)
+        top 22px
+  #menu-sub-trigger.open
+    transform translateY(-321px)
+    z-index 400
+    transition none
+    span
+      left 14px
+      &:nth-child(1)
+        transform rotate(-45deg)
+      &:nth-child(2)
+        transform rotate(45deg)
+
+.nav-icon.open
+  span
+    &:nth-child(1)
+      transform rotate(45deg) translateY(3px) translateX(3px)
+    &:nth-child(2)
+      transform rotate(-45deg) translateY(-3px) translateX(3px)

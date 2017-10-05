@@ -1,0 +1,118 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+footer
+  background $blue-dark
+  padding-top 39px
+  .button
+    float right
+
+.footer-links
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  justify-content space-between
+  padding-top 10px
+  +mobile()
+    flex-wrap wrap
+    flex-direction column
+  li
+    +mobile()
+      margin-bottom 10px
+    a
+      color $white
+      font-size: .875em
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      text-transform uppercase
+      &:hover
+        opacity .8
+
+.footer-row
+  border-bottom 1px solid rgba(255, 255, 255, .2)
+  padding-bottom 25px
+  margin-bottom 40px
+
+.logo-small
+  max-width 101px
+  display block
+  margin-bottom 53px
+  img
+    width 100%
+  +mobile()
+    display none
+
+.footer-lang
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  +mobile()
+    margin-bottom 30px
+    justify-content center
+  li
+    margin-right 30px
+    +mobile()
+      margin 0 15px
+    a
+      color $white
+      font-size: .875em
+      font-weight: 700;
+      opacity .5
+      text-transform uppercase
+      &:hover
+        opacity 1
+    .active
+      opacity 1
+
+.list-links
+  li
+    a
+      font-size: .75em
+      line-height: 2.0;
+      color: rgba(255, 255, 255, 0.5);
+      &:hover
+        opacity .5
+
+.footer-text
+  color $white
+  font-size .75em
+  line-height 2
+
+.footer-phone
+  li
+    a
+      color $white
+      font-size .75em
+      line-height 2
+      &:hover
+        opacity .5
+
+.footer-mail
+  +mobile()
+    margin-bottom 30px
+  li
+    color $white
+    font-size .75em
+    a
+      color $blue
+      line-height 2
+      margin-left 5px
+      &:hover
+        opacity .5
+
+
+.footer-social
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  +mobile()
+    margin-bottom 30px
+    justify-content center
+  li
+    margin-right 30px
+    +mobile()
+      margin 0 15px
+    a
+      color $white
+      &:hover
+        opacity .5

@@ -1,0 +1,31 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+header.header-index
+  height: 680px;
+  background url('../img/illus/header-back.png') center center no-repeat
+  background-size cover
+  .row,.container
+    height 100%
+  p
+    font-weight 600
+    font-size 1.438em
+    color $white
+    margin-bottom: 132px;
+    letter-spacing: -.4px;
+    +mobile()
+      margin-bottom 100px
+
+header.header-index.header-univ
+  background url('../img/illus/header-back2.png') center center no-repeat
+  background-size cover
+
+header.header-regular
+  h1
+    font(2em, $black, 800, normal)
+    margin-bottom 17px
+    text-transform uppercase
+    letter-spacing .8px
+  p
+    font-size 1.125em
+    margin-bottom 45px

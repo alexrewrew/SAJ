@@ -1,0 +1,55 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+ul
+  padding 0
+  margin 0
+  li
+    list-style none
+
+ol
+  padding 0
+  margin 0
+  li {}
+
+.list-advantages
+  padding-top 60px
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  li
+    flex 1 1 22%
+    max-width 22%
+    padding-right 15px
+    margin-bottom 37px
+    +mobile()
+      flex 1 1 50%
+      max-width 50%
+      span
+        margin 0 auto
+
+
+.list-video
+  +portrait()
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    justify-content space-between
+  li
+    margin-bottom 30px
+    +portrait()
+      flex 1 1 30%
+      max-width 30%
+    a
+      display flex
+      justify-content center
+      align-items center
+      width 100%
+      background $blue-dark2
+      height: 103px;
+      border-radius: 3px;
+      opacity .9
+      +mobile()
+        height 156px
+      &:hover
+        opacity 1

@@ -1,0 +1,95 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+select
+  +mobile()
+    width 100%
+    letter-spacing: 0.2px;
+    font-weight 700
+    font-size 14px
+    margin 0
+    color $gray-text
+    padding-left 20px
+  //-webkit-appearance none
+  //border none
+  //background $white
+  //text-align center
+  //letter-spacing: 0.2px;
+  //font-size .875em
+  //font-weight 700
+  //padding 12px 58px 10px;
+  //border-radius 20px
+  //color $gray-text
+  &:focus
+    outline none
+
+//.select-container
+//  position relative
+//  display inline-block
+//  &:after
+//    triangle($black, down, 5px)
+//    top 45%
+//    right 30px
+
+option {}
+optgroup {}
+
+.chosen-container.chosen-container-single
+  display block
+  width 100% !important
+  border none
+
+.chosen-container-single .chosen-single
+  padding-left 0
+  text-align center
+  border none
+  box-shadow none
+  &:hover
+    span
+      color $black
+  span
+    letter-spacing: 0.2px;
+    font-weight 700
+    font-size 14px
+    margin 0
+    color $gray-text
+    background $white
+    box-shadow none
+    padding 2px 0
+    transitions()
+
+
+.chosen-container.chosen-container-single.chosen-container-active.chosen-with-drop, .chosen-container.chosen-container-single.chosen-container-active
+  border none
+  box-shadow none
+  .chosen-single
+    border none
+    box-shadow none
+
+.chosen-container .chosen-results li
+  text-align center
+  letter-spacing: 0.2px;
+  font-weight 700
+  font-size 14px
+  margin 0
+  color $gray-text
+  border none
+
+.chosen-container .chosen-results li.active-result.highlighted
+  color $black
+  background none
+
+.chosen-container .chosen-results
+  padding 0
+  margin 0
+  border none
+
+.chosen-container-single .chosen-drop
+  border: none;
+  box-shadow: none;
+  padding-top 4px
+
+
+
+.chosen-container-single .chosen-single div
+  right 30px

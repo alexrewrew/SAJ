@@ -1,0 +1,53 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+//  HEADERS
+
+h1
+  font(4.6em, $white, 900, 1.35)
+  margin-bottom 4px
+  text-transform uppercase
+  +mobile()
+    font-size 4em
+    line-height 1
+
+h2
+  font(2em, $black, 800, normal)
+  margin-bottom 48px
+  text-transform uppercase
+  letter-spacing .8px
+
+h3
+  font(1em, $black, 700, normal)
+  margin-bottom 5px
+  text-transform uppercase
+  color $white
+  letter-spacing .5px
+
+h4
+  font(.875em, $black, 600, normal)
+  margin-bottom 11px
+  text-transform uppercase
+  +mobile()
+    margin-bottom 5px
+
+h5
+  font(1.125em, $black, 700, normal)
+  margin-bottom 5px
+  letter-spacing: 0.9px;
+  color $white
+
+h6
+  font(1em, $black, 400, normal)
+  margin-bottom 10px
+
+//  PARAGRAPH
+p
+  font(1em, $black, 400, normal)
+  margin-bottom 10px
+
+.black
+  color $black
+
+.white
+  color $white

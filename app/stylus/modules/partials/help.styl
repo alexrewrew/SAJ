@@ -1,0 +1,43 @@
+.help
+  background $yellow
+  padding-top 105px
+  padding-bottom: 46px
+  h2
+    color $white
+    margin-bottom 21px
+  p
+    color: $white
+
+.help-description
+  z-index 2
+  position relative
+
+
+.help-video
+  padding-top 20px
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  li
+    margin-right 47px
+    .icon-circle
+      &:after
+        display none
+
+.gigantic-text
+  font-size 9.375em
+  font-weight 700
+  margin-bottom 4px
+  line-height: 1;
+
+.help-text
+  font-size 1.125em
+  margin-bottom 94px
+
+.help-image
+  position absolute
+  top: -6%;
+  left: -46%;
+  z-index 1
+  +mobile()
+    display none

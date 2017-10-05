@@ -1,0 +1,237 @@
+//- layouts/layout.pug
+extend layouts/_layout-trns.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-index
+        .container
+            .row.justify-content-center.align-items-end
+                .col-lg-10
+                    h1 Study & jorney
+                    p Available education in Ukraine
+                    .search-container
+                        form
+                            .select-container
+                                select.chosen-select
+                                    option Country
+                                    option Ukraine
+                                    option USA
+                            .select-container
+                                select.chosen-select
+                                    option City
+                                    option Ukraine
+                                    option USA
+                            .select-container
+                                select.chosen-select
+                                    option Department
+                                    option Ukraine
+                                    option USA
+                            button(type='submit').button Search
+
+    section.container
+        .row.justify-content-center
+            .col-lg-10
+                h2 Universities of ukraine
+                .row.university
+                    .col-md-6
+                        a(href='' title='').university-container
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-6
+                        a(href='' title='').university-container
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+        .row.justify-content-center
+            .col-md-4.text-center
+                a(href='' title='').button.big#button-univer Show more
+
+    section.service
+        .container
+            .row.justify-content-center
+                .col-lg-10
+                    h2 Services and price
+                    .slider
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+
+    section.help
+        .container
+            .row.justify-content-center
+                .col-md-6.col-lg-5
+                    .help-description
+                        h2 помогли поступить
+                        p.gigantic-text 325
+                        p.help-text студентам со всего мира получить
+                            br
+                            | лучшие образование
+                        h2 Отзывы о нашей работе
+                        ul.help-video
+                            li
+                                a(href='' title='').icon-circle
+                                    img(src='img/illus/video1.png' title='' alt='')
+                                    span.icon-circle--play
+                            li
+                                a(href='' title='').icon-circle
+                                    img(src='img/illus/video1.png' title='' alt='')
+                                    span.icon-circle--play
+                .col-md-6.col-lg-5
+                    span.icon-circle.small.icon-map1 12
+                    span.icon-circle.small.icon-map2 8
+                    span.icon-circle.small.icon-map3 3
+                    span.icon-circle.small.icon-map4 17
+                    span.icon-circle.small.icon-map5 128
+                    span.icon-circle.small.icon-map6 76
+                    span.icon-circle.small.icon-map7 93
+                    img(src='img/illus/map.png' title='').help-image
+
+    section.advantages
+        .container
+            .row.justify-content-center
+                .col-lg-8
+                    h2 Преимущества
+                        br
+                        | Украины
+                    a(href='' title='').link-advantages СТАТЬЯ ОБ УКРАИНЕ
+                        i.fa.fa-angle-right
+                    ul.list-advantages
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-1.png' title='')
+                            h5 Европейская страна
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-2.png' title='')
+                            h5 Образованное общество
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-3.png' title='')
+                            h5 Толерантные люди
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-4.png' title='')
+                            h5 Кузня кадров
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-5.png' title='')
+                            h5 Умеренный климат
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-6.png' title='')
+                            h5 Низкие цены
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-7.png' title='')
+                            h5 Красивые женщины
+                         li
+                            span.icon-circle.middle2
+                                img(src='img/icons/4/icon4-8.png' title='')
+                            h5 Украинцы не русские
+                .col-lg-2
+                    h2 Видео об Украине
+                    ul.list-video
+                        li
+                            a(href='#inline1' title='').inline
+                                span.icon-circle.middle
+                                    .icon-circle--play
+                        li
+                            a(href='#inline2' title='').inline
+                                span.icon-circle.middle
+                                    .icon-circle--play
+                        li
+                            a(href='#inline3' title='').inline
+                                span.icon-circle.middle
+                                    .icon-circle--play
+    section.partners
+        .container
+            .row.justify-content-center
+                .col-md-6.col-lg-5
+                    h2 Стань нашим партнером
+                    p Мы предлагаем партнерство на взаимовыгодных условиях компаниям и предпринимателям со всего мира.
+                        br
+                        | Если Вы занимаетесь организацией образовательных программ и рассматриваете Украину в качестве бизнес-направления, напишите нам - мы подготовили для Вас специальное предложение.
+                    a(hred='' title='').button.big Стать партнером
+                .col-md-6.col-lg-5
+
+
+    #inline1(style='display:none;')
+        iframe(src='https://www.youtube.com/embed/i0g8toTz-ek', frameborder='0', allowfullscreen='')
+
+    #inline2(style='display:none;')
+        p
+            | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+    #inline3(style='display:none;')
+        p
+            | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+
+
+

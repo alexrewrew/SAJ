@@ -1,0 +1,89 @@
+//- layouts/layout.pug
+extend layouts/_layout-trns.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-index.header-univ
+        .container
+            .row.justify-content-center.align-items-end
+                .col-lg-10
+                    h1 Study & jorney
+                    p Available education in Ukraine
+                    .search-container
+                        form
+                            .select-container
+                                select.chosen-select
+                                    option Country
+                                    option Ukraine
+                                    option USA
+                            .select-container
+                                select.chosen-select
+                                    option City
+                                    option Ukraine
+                                    option USA
+                            .select-container
+                                select.chosen-select
+                                    option Department
+                                    option Ukraine
+                                    option USA
+                            button(type='submit').button Search
+
+    section.container
+        .row.justify-content-center
+            .col-lg-10
+                h2 Universities of ukraine
+                .row.university
+                    .col-md-6
+                        a(href='' title='').university-container
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-6
+                        a(href='' title='').university-container
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+                    .col-md-4
+                        a(href='' title='').university-container.small
+                            .university-container--description
+                                h3 Университет шевченко
+                                p Киевский национальный университет имени в... университет университет
+                            img(src='img/univ/univ1.png' title='' alt='').university-container--image
+        .row.justify-content-center
+            .col-md-4.text-center
+                a(href='' title='').button.big#button-univer Show more

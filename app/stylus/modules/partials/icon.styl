@@ -1,0 +1,212 @@
+.icon-circle
+  width 89px
+  height 89px
+  position relative
+  text-align center
+  display block
+  border-radius 50%
+  z-index 20
+  background $gray
+  margin-bottom 18px
+  &--play
+    triangle($white, right, 20px)
+    position absolute
+    top 28%
+    left 42%
+    transitions()
+  &:before
+    pseudo(block,absolute)
+    width calc(100% + 24px)
+    height calc(100% + 24px)
+    top -12px
+    left -12px
+    border-radius 50%
+    opacity .2
+    background $white
+    z-index -1
+    transitions()
+  &:after
+    pseudo(block,absolute)
+    width calc(100% + 48px)
+    height calc(100% + 48px)
+    top -24px
+    left -24px
+    border-radius 50%
+    opacity .1
+    background $white
+    z-index -1
+    transitions()
+  &:hover
+    .icon-circle--play
+      transform rotate(360deg)
+    &:before
+      width 89px
+      height 89px
+      top calc(50% - 45px)
+      left calc(50% - 45px)
+    &:after
+      width 89px
+      height 89px
+      top calc(50% - 45px)
+      left calc(50% - 45px)
+
+
+
+.icon-circle.small
+  width 46px
+  height 46px
+  padding-top 13px
+  background $white
+  color $blue
+  &:before
+    pseudo(block,absolute)
+    width calc(100% + 14px)
+    height calc(100% + 14px)
+    top -7px
+    left -7px
+    background $trans
+    border 1px solid $white
+    opacity .5
+  &:after
+    pseudo(block,absolute)
+    width calc(100% + 28px)
+    height calc(100% + 28px)
+    top -14px
+    left -14px
+    border 1px solid $white
+    background $trans
+    opacity .3
+  &:hover
+    &:before
+      width 46px
+      height 46px
+      top calc(50% - 23px)
+      left calc(50% - 23px)
+    &:after
+      width 46px
+      height 46px
+      top calc(50% - 23px)
+      left calc(50% - 23px)
+  +portrait()
+    display none
+  +mobile()
+    display none
+
+.icon-circle.middle
+  width 53px
+  height 53px
+  background $yellow
+  margin-bottom 0
+  &:before
+    pseudo(block,absolute)
+    width calc(100% + 18px)
+    height calc(100% + 18px)
+    top -9px
+    left -9px
+    background $yellow
+  &:after
+    pseudo(block,absolute)
+    width calc(100% + 36px)
+    height calc(100% + 36px)
+    top -18px
+    left -18px
+    background $yellow
+  .icon-circle--play
+    triangle($white, right, 15px)
+    top 20%
+  &:hover
+    &:before
+      width 46px
+      height 46px
+      top calc(50% - 23px)
+      left calc(50% - 23px)
+    &:after
+      width 46px
+      height 46px
+      top calc(50% - 23px)
+      left calc(50% - 23px)
+
+
+.icon-circle.middle2
+  width 74px
+  height 74px
+  background $white
+  opacity .87
+  margin-bottom 38px
+  display flex
+  justify-content center
+  align-items center
+  &:before
+    pseudo(block,absolute)
+    width calc(100% + 24px)
+    height calc(100% + 24px)
+    top -12px
+    left -12px
+  &:after
+    pseudo(block,absolute)
+    width calc(100% + 48px)
+    height calc(100% + 48px)
+    top -24px
+    left -24px
+  &:hover
+    &:after, &:before
+      width 74px
+      height 74px
+      top calc(50% - 37px)
+      left calc(50% - 37px)
+
+.icon-map1
+  position absolute
+  bottom: 33.9%;
+  left: 3.4%;
+  +tablet()
+    bottom 41.9%;
+    left 11.4%;
+
+.icon-map2
+  position absolute
+  bottom: 51%;
+  left: 26.2%;
+  +tablet()
+    bottom 62%
+    left 37.2%
+
+.icon-map3
+  position absolute
+  bottom: 32.7%;
+  left: 42.2%;
+  +tablet()
+    bottom 43.7%
+    left 63.2%
+
+.icon-map4
+  position absolute
+  top: 12.9%;
+  right: 34.2%;
+  +tablet()
+    top: 9.9%;
+    right: -9.8%;
+
+.icon-map5
+  position absolute
+  top: 24.6%;
+  right: 21%;
+  +tablet()
+    top: 21.6%;
+    right: -13%;
+
+.icon-map6
+  position absolute
+  top: 32.5%;
+  right: 25.7%;
+  +tablet()
+    top: 28.5%;
+    right: -6.3%;
+
+.icon-map7
+  position absolute
+  top: 31.3%;
+  right: 9.3%;
+  +tablet()
+    top: 28.3%;
+    right: -23.7%;

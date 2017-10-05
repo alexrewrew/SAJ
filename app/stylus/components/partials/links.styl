@@ -1,0 +1,31 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+a
+  text-decoration none
+  transitions()
+  &:hover
+    text-decoration none
+  &:focus
+    text-decoration none
+
+.link-advantages
+  color $yellow
+  line-height: normal
+  letter-spacing: 1.9px;
+  font-size 1.125em
+  display inline-block
+  position relative
+  padding-right 20px
+  font-weight 700
+  .fa
+    position absolute
+    right 0px
+    top -7px
+    font-size 34px
+    transition transform .2s ease
+  &:hover
+    color $yellow
+    opacity .6
+    .fa
+      transform translateX(10px)
