@@ -18,7 +18,7 @@ $(document).ready(function () {
 
             $('.nav-secondary').removeClass('open');
         }
-        if($(this).hasClass('open')) {
+        if ($(this).hasClass('open')) {
             disableScroll();
         } else {
             enableScroll();
@@ -48,8 +48,8 @@ $(document).ready(function () {
         }
         window.onwheel = preventDefault; // modern standard
         window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-        window.ontouchmove  = preventDefault; // mobile
-        document.onkeydown  = preventDefaultForScrollKeys;
+        window.ontouchmove = preventDefault; // mobile
+        document.onkeydown = preventDefaultForScrollKeys;
     }
 
     function enableScroll() {
@@ -69,15 +69,6 @@ $(document).ready(function () {
 
     // MODAAL PLUGIN
     $(".inline").modaal();
-
-    // FULL PAGE PLUGIN
-    // $('#fullpage').fullpage();
-
-    // SLICK SLIDER COUNTER
-    // $('.slider').on('init reInit afterChange', function (event, slick, currentSlide) {
-    //     var i = (currentSlide ? currentSlide : 0) + 1;
-    //     $('.slider-counter').text(i + '/' + slick.slideCount);
-    // });
 
     // SLIDER
     $(".slider").slick({
@@ -103,17 +94,48 @@ $(document).ready(function () {
         ]
     });
 
-    // OWL CAROUSEL PLUGIN
-    // $(".owl-carousel").owlCarousel();
+    $(".slider-header").slick({
+        slide: ".slide",
+        nextArrow: "<div class='arrow arrow-right'><i class='fa fa-long-arrow-right'></i></div>",
+        prevArrow: "<div class='arrow arrow-left'><i class='fa fa-long-arrow-left'></i></div>",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+    });
 
-    // MAGNIFIC POPOUP
-    // $('.popup-gallery').magnificPopup({
-    //     delegate: 'a',
-    //     type: 'image'
-    // });
+    $('.slider-special').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: '<i class="fa fa-angle-right"></i>',
+        prevArrow: '<i class="fa fa-angle-left"></i>',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    });
 
-    // WOW JS
-    // new WOW().init();
+    $(".slider-big").slick({
+        slide: ".order-service",
+        nextArrow: "<div class='arrow arrow-right'><i class='fa fa-long-arrow-right'></i></div>",
+        prevArrow: "<div class='arrow arrow-left'><i class='fa fa-long-arrow-left'></i></div>",
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false
+    });
+
+
+    $( function() {
+        $( "#accordion" ).accordion({
+            heightStyle: "content"
+        });
+    } );
+
 
     // SCROLLING
     $(window).scroll(function () {
@@ -130,27 +152,13 @@ $(document).ready(function () {
         $('.university').toggleClass('open');
     })
 
-    // ANCHOR LINKS
-    $(".smooth").click(function (event) {
-        event.preventDefault();
-        var id = $(this).attr("href"),
-            top = $(id).offset().top - 70;
-        $("body,html").animate({
-            scrollTop: top
-        }, 1500);
-    });
+    $('#tab-change').click(function (e) {
+        e.preventDefault();
+        $('.tab-about').toggleClass('open');
+        $('.tab-map').toggleClass('open');
+        $(this).toggleClass('open');
+    })
+
 });
 
 // !!! RESPONSIVE SCRIPTS !!!
-
-// $(window).on('load resize', function() {
-//     'use strict';
-//     if (window.matchMedia("(max-width: 767px)").matches) {
-//
-//     }
-//     if (window.matchMedia("(min-width: 768px)").matches) {
-//
-//     }
-// });
-
-

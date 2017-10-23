@@ -1,0 +1,58 @@
+//- layouts/layout.pug
+extend layouts/_layout-trns.pug
+
+block title
+    | Главная страница
+
+block content
+
+    header.header-index
+
+    section.service.services-page.faq-page
+
+            .container.faq-content
+                .row.justify-content-center
+                    .col-lg-8
+                        header.faq-header
+                            h2 У вас есть вопросы?
+                            p Вы можете просмотреть часто задаваемые вопросы и если не найдете ответа на свои вопросы вссегда сможете написать нам и мы с радостью поможем во всем разобраться
+                        #accordion
+                            h3 Как подать документы?
+                            div
+                                p Заявление в электронной форме (электронное заявление) - это заявление, которое вносится абитуриентом в личном электронном кабинете в Единую государственную электронную базу по вопросам образования (далее - Единая база) путем заполнения им в режиме он-лайн электронной формы.
+
+                                p В 2017 году для подачи электронного заявления абитуриент должен зарегистрироваться на интернет-сайте по адресу: http://ez.osvitavsim.org.ua (Регистрация электронных кабинетов абитуриентов и загрузка в электронные кабинеты приложений к документам о среднем образовании начинается 29 июня и заканчивается в 18.00 25 июля 2017 года).
+                            h3 Какова система зачисления на курс?
+                            div
+                                p
+                                    | Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                                    | purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                                    | velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                                    | suscipit faucibus urna.
+                            h3 Что необходимо иметь при себе?
+                            div
+                                p
+                                    | Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                                    | Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                                    | ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                                    | lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                                ul
+                                    li List item one
+                                    li List item two
+                                    li List item three
+                            h3 Кто меня встретит в аэропорту?
+                            div
+                                p
+                                    | Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                                    | et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                                    | faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                                    | mauris vel est.
+                                p
+                                    | Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                                    | Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                                    | inceptos himenaeos.
+
+                    .col-lg-4.faq-right
+                        h3 Не нашли ответ? Задайте нам свой вопрос!
+                        p Если вы не нашли нужный вам ответ вы всегда можете задать нам его в режиме реального времени
+                        a(href='' title='').button Задайте вопрос

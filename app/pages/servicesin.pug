@@ -1,0 +1,148 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.services-page
+        header.header-regular
+            .container
+                .row.justify-content-center
+                    
+                    .col-lg-10
+                        a(href='' title='').link-back
+                            i.fa.fa-long-arrow-left
+                            | back to services
+                        .slider-big
+                            a(href='' title='').order-service
+                                .order-service--description
+                                    h2 Приглашение на обучение в Украину
+                                    h3 Что это такое?
+                                    p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                    span.button Order service
+                                .order-service--image
+                                    img(src='img/service/service-slide1.png' title='' alt='')
+                            a(href='' title='').order-service
+                                .order-service--description
+                                    h2 Приглашение на обучение в Украину
+                                    h3 Что это такое?
+                                    p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                    span.button Order service
+                                .order-service--image
+                                    img(src='img/service/service-slide1.png' title='' alt='')
+
+        .container
+            .row.justify-content-center
+                .col-lg-10
+                    .service-why
+                        h3 Зачем оно вам?
+                        p Это ваш «пропуск» в страну в качестве студента. Без него вы не сможете легально находиться и учиться в Украине.
+                .col-lg-10
+                    .service-attention
+                        p Обратите внимание!
+                            br
+                            | Приглашение на обучение не гарантирует получения визы.
+
+    section.service
+        .container
+            .row.justify-content-center
+                .col-md-10
+                    .row
+                        .col-lg-3.col-md-6
+                            .service-step
+                                h2 01
+                                    i.fa.fa-long-arrow-right
+                                p Вы присылаете нам свои документы для оформления приглашения (см. раздел ниже)
+                        .col-lg-3.col-md-6
+                            .service-step
+                                h2 02
+                                    i.fa.fa-long-arrow-right
+                                p Вы присылаете нам свои документы для оформления приглашения (см. раздел ниже)
+                        .col-lg-3.col-md-6
+                            .service-step
+                                h2 03
+                                    i.fa.fa-long-arrow-right
+                                p Вы присылаете нам свои документы для оформления приглашения (см. раздел ниже)
+                        .col-lg-3.col-md-6
+                            .service-step
+                                h2 04
+                                p Вы присылаете нам свои документы для оформления приглашения (см. раздел ниже)
+
+    section
+        .container
+            .row.justify-content-center
+                .col-lg-10
+                    .service-why
+                        h3 Необходимые документы
+                        ul
+                            li - Копия действующего загранпаспорта.
+                            li - Свидетельство об окончании школы и результаты экзаменов.
+                            li - Согласие на обработку персональных данных. Скачать образец.
+                            li - Анкета для поступления (по требованию университета).
+
+                .col-lg-10
+                    p.service-how Как это вглядит
+                    ul.list-docs
+                        li
+                            a(href='#inline1' title='').inline
+                                img(src='img/docs/doc1.png' title='' alt='')
+                                i.fa.fa-eye
+                        li
+                            a(href='#inline1' title='').inline
+                                img(src='img/docs/doc1.png' title='' alt='')
+                                i.fa.fa-eye
+
+                        li
+                            a(href='#inline1' title='').inline
+                                img(src='img/docs/doc1.png' title='' alt='')
+                                i.fa.fa-eye
+
+
+                .col-lg-10
+                    .service-why
+                        h3 Зачем обращаться в Study & Ukraine
+                        ul
+                            li - Берем на себя все проблемы, связанные с оформлением документов.
+                            li - Работаем со всеми украинскими ВУЗами и образовательными степенями: от бакалавра до MBA.
+                            li - Знаем все тонкости образовательной системы, неизвестные абитуриенту.
+
+
+    section.service
+        .container
+            .row.justify-content-center
+                .col-lg-10
+                    h2 Services and price
+                    .slider
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+
+    #inline1(style='display:none;')
+        iframe(src='https://www.youtube.com/embed/i0g8toTz-ek', frameborder='0', allowfullscreen='')

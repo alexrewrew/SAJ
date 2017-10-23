@@ -1,0 +1,90 @@
+.faq-page
+  padding-top 0
+  padding-bottom 0
+
+.faq-content
+  position relative
+  top -252px
+  z-index 100
+
+//.faq-left
+
+.faq-right
+  background $yellow
+  padding 85px 52px
+  +portrait()
+    margin-top 10px
+  +mobile()
+    margin-top 10px
+  p
+    margin-bottom 53px
+  h3
+    color $black-text
+
+  .button
+    background $white
+    text-transform uppercase
+    max-width 100%
+    padding 21px 0
+    border-radius: 30px;
+
+
+.ui-accordion .ui-accordion-header
+  margin-top 10px
+  border 0
+  border-radius 0
+  background $white
+  padding 43px 52px 43px 165px
+  font-size: 1em
+  color $black
+  font-weight: bold;
+  line-height: 1.55;
+  letter-spacing: 0.4px;
+  position relative
+  +mobile()
+    padding-left 90px
+    padding-right 10px
+  &:focus
+    outline none
+  &:before
+    pseudo(block, absolute)
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    border: solid 1px #e2e2e2;
+    top 30px
+    left 82px
+    +mobile()
+      left 20px
+  &:after
+    content '+'
+    display block
+    position absolute
+    color $black
+    font-weight 900
+    font-size 22px
+    top 40px
+    left 103px
+    +mobile()
+      left 42px
+
+.ui-widget-content
+  border 0
+  border-radius 0
+
+.ui-accordion .ui-accordion-content
+  padding 52px 94px 52px 181px
+  position relative
+  +mobile()
+    padding-left 20px
+    padding-right 20px
+  &:before
+    pseudo(block, absolute)
+    height: 1px;
+    background-color: #dbdbdb;
+    width calc(100% - 98px - 86px)
+    top 0
+    right 98px
+
+.ui-accordion-header-icon.ui-icon.ui-icon-triangle-1-e
+  display none

@@ -1,0 +1,113 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.services-page.service
+        header.header-regular
+            .container
+                .row.justify-content-center
+                    .col-lg-5.col-md-8
+                        a(href='' title='').link-back
+                            i.fa.fa-long-arrow-left
+                            | back to FAQ
+                    .col-lg-2.col-md-4
+                        ul.list-steps
+                            li
+                                a(href='' title='').active 1 step
+                            li
+                                a(href='' title='') 2 step
+                            li
+                                a(href='' title='') 3 step
+                    .col-lg-3
+
+                .row.justify-content-center
+                    .col-lg-7
+                        form.form-contact-mail
+                            #step1
+                                h2.heading-hr.header-border Выберете услугу
+                                p Вы можете выбрать желаемую для вас улугу
+                                .radiobutton
+                                    input#radio1(type='radio' name="gender" value="One").error
+                                    label(for='radio1') Легализация документов
+
+                                .radiobutton
+                                    input#radio2(type='radio' name="gender" value="Two")
+                                    label(for='radio2') Перевод из ВУЗа в ВУЗ
+
+                                .radiobutton
+                                    input#radio3(type='radio' name="gender" value="Three")
+                                    label(for='radio3') Приглашение на обучение
+
+                                .radiobutton
+                                    input#radio4(type='radio' name="gender" value="Four")
+                                    label(for='radio4') Подготовительные курсы
+
+                                .radiobutton
+                                    input#radio5(type='radio' name="gender" value="Five")
+                                    label(for='radio5') Поиск университета
+
+                                .radiobutton
+                                    input#radio6(type='radio' name="gender" value="Six")
+                                    label(for='radio6') Помощь при поступление в университет
+                                button(type='submit').button Next
+                            #step2
+                                h2.heading-hr.header-border Выберете услугу
+                                h3.black Контактная информация
+                                p Заполните поля что бы нам было проще вас ввезти в украину
+                                .form-contact-mail
+                                    input(type='text' placeholder='Имя')
+                                    input(type='email' placeholder='Почта')
+                                    input(type='tel' placeholder='Телефон')
+                                    input(type='text' placeholder='Страна проживания')
+                                .spacer
+                                h3.black Место проживание
+                                p Заполните поля что бы нам было проще вас ввезти в украину
+                                .form-contact-address
+                                    input(type='text' placeholder='Город проживания')
+                                    input(type='text' placeholder='Индекс').input-small
+                                    input(type='text' placeholder='Адрес')
+                                    input(type='text' placeholder='Дом').input-small
+                                    input(type='text' placeholder='Квартира')
+                                    button(type='submit').button Next
+                            #step3
+                                h2.heading-hr.header-border Выберете услугу
+                                h3.black Ваши документы
+                                p Заполните поля что бы нам было проще вас ввезти в украину
+                                .upload-group
+                                    .question-mark
+                                        span !
+                                        .answer-mark
+                                            p Приглашение на обучение — официальный документ, который выдает ваш университет. Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                    .uploadbutton.uploaded
+                                        p Загран. паспорт
+                                        input#upload1(type='file').uploaded
+                                        label(for='upload1')
+                                            i.fa.fa-camera
+                                            i.fa.fa-check
+                                        p
+                                            span Загрузить
+                                            span Загружено
+                                    .uploadbutton
+                                        p Загран. паспорт
+                                        input#upload2(type='file').uploaded
+                                        label(for='upload2')
+                                            i.fa.fa-camera
+                                            i.fa.fa-check
+                                        p
+                                            span Загрузить
+                                            span Загружено
+                                h3.black Ваш комментарий
+                                p Укажите ваши пожелания к чему то там и больше ошибок
+                                textarea(placeholder='You text')
+                                button(type='submit').button Send
+                            #step4
+                                img(src='img/illus/like.png' title='' alt='').img-like
+                                h2.black.heading-hr.header-border Ваши документы
+                                p Мы обрабатываем вашу заявку, ожидайте ответа от нашего менеджера после уточнения информации.
+                                a(href='' title='').button OK
+
+                    .col-lg-3

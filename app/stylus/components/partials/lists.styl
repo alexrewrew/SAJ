@@ -53,3 +53,144 @@ ol
         height 156px
       &:hover
         opacity 1
+
+.list-exchages
+  display flex
+  flex-direction row
+  justify-content flex-end
+  margin 10px 0
+  +mobile()
+    justify-content flex-start
+  li
+    margin-left 25px
+    color: #1b1b1b;
+    font-size .875em
+    +tablet()
+      margin-left 20px
+    +mobile()
+      margin-left 0
+      margin-right 9px
+    .fa
+      margin-left 10px
+    .fa-long-arrow-down
+      color #ff3030
+    .fa-long-arrow-up
+      color #56da72
+
+.list-tags
+  display flex
+  flex-direction row
+  flex-wrap wrap
+  +portrait()
+    margin-bottom 30px
+  +mobile()
+    margin-bottom 30px
+  li
+    margin-right 30px
+    margin-bottom 12px
+    +mobile()
+      margin-right 15px
+    a
+      color: rgba(27, 27, 27, 0.5);
+      &:hover
+        color $blue
+
+.list-time
+  display flex
+  flex-direction column
+  justify-content flex-end
+  flex-wrap nowrap
+  margin 5px 0
+  +tablet()
+    justify-content space-between
+    flex-direction row
+  li
+    text-align right
+    font-size .875em
+    &:last-child
+      font-weight 700
+
+.list-docs
+  display flex
+  flex-direction row
+  padding 0 60px
+  margin-bottom 15px
+  padding-left 0
+  +mobile()
+    padding-left 30px
+    padding-right 30px
+    flex-wrap wrap
+    justify-content space-between
+  li
+    margin-right 30px
+    +mobile()
+      flex 1 1 50%
+      max-width 50%
+      margin-right 0
+      margin-bottom 15px
+    a
+      display flex
+      justify-content center
+      align-items center
+      overflow hidden
+      width 86px
+      height 86px
+      border-radius 50%
+      position relative
+      .fa
+        position absolute
+        top 27px
+        left 27px
+        color $black-text
+        font-size 28px
+        z-index 5
+        opacity 0
+        transitions()
+      &:before
+        pseudo(block, absolute)
+        top -86px
+        left 0
+        background-color: $yellow;
+        opacity .7
+        width 86px
+        height 86px
+        transitions()
+        z-index 4
+      &:focus
+        outline none
+      &:hover
+        &:before
+          top 0
+        .fa
+          opacity 1
+
+.list-icons
+  display flex
+  margin-bottom 50px
+  li
+    margin-right 17px
+    a
+      display block
+
+.footer-social.list-social
+  margin 45px 0
+  li
+    a
+      opacity: 0.5;
+      color: #001825
+
+.list-steps
+  display flex
+  flex-direction row
+  justify-content space-between
+  margin-bottom 55px
+  li
+    a
+      display block
+      font-size: .875em
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: rgba(0, 0, 0, 0.5);
+    .active
+      font-weight 700
+      color $black

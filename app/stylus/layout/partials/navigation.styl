@@ -156,6 +156,8 @@ nav.nav-transparent
     a
       font-size .75em
       color $gray-text
+      +displays()
+        font-size .875em
       &:hover
         color: $blue
 
@@ -206,7 +208,7 @@ nav.nav-transparent
         transform rotate(-45deg)
         top 22px
   #menu-sub-trigger.open
-    transform translateY(-321px)
+    transform translateY(-312px)
     z-index 400
     transition none
     span

@@ -1,0 +1,215 @@
+//- layouts/layout.pug
+extend layouts/_layout-contacts.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.service.service-page
+        header.header-regular.header-contact
+            .container
+                .row.justify-content-center
+                    .col-lg-7
+                        .row
+                            .col-12
+                                .tab-map
+                                    #map
+                                .tab-about
+                                    h1 About Us
+                                    p Агентство Study & Ukraine образовано в 2014 году, чтобы помогать иностранцам поступать в украинские ВУЗы.
+                                    p Наши сотрудники имеют пятилетний опыт работы в сфере эдьюкейшн-консалтинга, а средний возраст нашего коллектива около 30 лет. Свой опыт мы получали не только в аналогичных агентствах, но и в других смежных сферах по предоставлению услуг. Поэтому мы четко понимаем разницу между Заказчиками и Клиентами, и вы обязательно это почувствуете, обращаясь к нам за помощью.
+                                    p Мы знаем, что клиент, в отличие от заказчика, ищет комплексный сервис, а не услугу. Каждый наш абитуриент пытается не просто поступить в ВУЗ, а выйти на путь к собственной цели.
+                                    p И наша ключевая задача - в множестве вариантов найти путь наименьшего сопротивления. Весь стресс, связанный с переездом и поступлением в чужой стране мы берем на себя.
+
+
+
+                                br
+                                br
+                                h2.heading-hr Напишите Нам
+                                p Напишите нам и срадостью ответим на ваш запрос
+                                form.form-contact-mail
+                                    input(type='text' placeholder='You Name')
+                                    input(type='email' placeholder='You E-mail')
+                                    input(type='text' placeholder='Phone Nom.')
+                                    input(type='text' placeholder='You Country')
+                                    textarea(placeholder='You text')
+                                    button(type='submit').button Write us
+
+
+
+                    .col-lg-3
+                        .row
+                            .col-12
+                                h2(style='margin-bottom:17px') Contact us
+                                p Украина, Киев,
+                                p ул. Паньковская 14/5
+                                .contact-phones
+                                    p
+                                        a(href='' title='') +38 044 000 00 00
+                                    p
+                                        a(href='' title='') +38 095 000 00 00
+                                ul.list-icons
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/social/social1.png' title='' alt='')
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/social/social2.png' title='' alt='')
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/social/social3.png' title='' alt='')
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/social/social4.png' title='' alt='')
+                                    li
+                                        a(href='' title='')
+                                            img(src='img/social/social5.png' title='' alt='')
+                                p E-mail:
+                                    |
+                                    a(href='' title='') study-and-ukraine@gmail.com
+                                p Skype:
+                                    |
+                                    a(href='' title='') Study.and.Ukraine
+                                ul.footer-social.list-social
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-facebook
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-google-plus
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-instagram
+                                a(href='' id='tab-change')
+                                    span.one Показать на карте
+                                    span.two Скрыть карту
+
+    section
+        .container.team
+            .team-text
+                | study
+                br
+                | and
+                br
+                | journey
+            .row.justify-content-center
+                .col-lg-10
+                    h2.heading-hr our team
+                    .row
+                        .col-lg-4.col-md-6
+                            .team-container
+                                .team-container--image
+                                    img(src='img/team/team1.png' title='' alt='')
+                                .team-container--description
+                                    ul
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-facebook
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-google-plus
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-instagram
+                                    h3 Евгений череп
+                        .col-lg-4.col-md-6
+                            .team-container
+                                .team-container--image
+                                    img(src='img/team/team1.png' title='' alt='')
+                                .team-container--description
+                                    ul
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-facebook
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-google-plus
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-instagram
+                                    h3 Евгений череп
+                        .col-lg-4.col-md-6
+                            .team-container
+                                .team-container--image
+                                    img(src='img/team/team1.png' title='' alt='')
+                                .team-container--description
+                                    ul
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-facebook
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-google-plus
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-instagram
+                                    h3 Евгений череп
+                        .col-lg-4.col-md-6
+                            .team-container
+                                .team-container--image
+                                    img(src='img/team/team1.png' title='' alt='')
+                                .team-container--description
+                                    ul
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-facebook
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-google-plus
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-instagram
+                                    h3 Евгений череп
+                        .col-lg-4.col-md-6
+                            .team-container
+                                .team-container--image
+                                    img(src='img/team/team1.png' title='' alt='')
+                                .team-container--description
+                                    ul
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-facebook
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-google-plus
+                                        li
+                                            a(href='' title='')
+                                                i.fa.fa-instagram
+                                    h3 Евгений череп
+
+    section.service
+        .container
+            .row.justify-content-center
+                .col-lg-10
+                    h2 Want partners?
+                    .slider
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+

@@ -1,0 +1,24 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.services-page.service
+        header.header-regular
+            .container
+                .row.justify-content-center
+                    .col-lg-7
+                        a(href='' title='').link-back
+                            i.fa.fa-long-arrow-left
+                            | back to FAQ
+                        h2.heading-hr.header-border Задайте вопрос
+                        p Наш менеджер ответит вам в ближайшее время
+                        form.form-contact-mail
+                            input(type='text' placeholder='You Name')
+                            input(type='email' placeholder='You E-mail')
+                            textarea(placeholder='You text')
+                            button(type='submit').button Send
+                    .col-lg-3

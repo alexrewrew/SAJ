@@ -42,6 +42,12 @@
       background $trans
       border-color $gray-back3
       color $black-text
+      margin 0 auto
+      display: block
+      font-size 1em
+      max-width 156px
+      padding: 11px 0 14px;
+      border-radius 30px
 
 .services-page
   padding-top 194px
@@ -56,3 +62,110 @@
   .service-container
     max-width: 300px
     margin 0 0 31px
+
+.slider-big
+  box-shadow: 0 3px 46px 0 rgba(0, 0, 0, .15) !important
+  margin-bottom 58px
+
+.order-service
+  display flex !important
+  background-color: $white
+  +mobile()
+    flex-wrap wrap
+  &--description
+    padding 63px 63px
+    flex 1 1 65%
+    max-width 65%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+      padding 30px
+    h2
+      border-bottom 2px solid $yellow
+      padding-bottom 23px
+      +mobile()
+        font-size 1.5em
+    h3
+      color $black-text
+      margin-bottom 16px
+    .button
+      max-width 192px
+  &--image
+    display flex
+    justify-content center
+    align-content center
+    max-width 35%
+    overflow hidden
+    flex 1 1 35%
+    +mobile()
+      display none
+    img
+      height 100%
+  &:focus
+    outline none
+
+.service-why
+  padding 42px 60px
+  padding-left 0
+  +mobile()
+    padding 30px
+  h3
+    color $black-text
+    margin-bottom 29px
+
+.service-attention
+  padding 42px 60px 44px 152px
+  background-color: rgba(6, 142, 220, .1)
+  +mobile()
+    padding 30px 30px 30px 80px
+
+  p
+    margin-bottom 0
+  &:before
+    pseudo(block, absolute)
+    width: 52px;
+    height: 52px;
+    border-radius 50%
+    background $white
+    left 60px
+    top 42px
+    +mobile()
+      left 30px
+      top 30px
+  &:after
+    display block
+    position absolute
+    content '!'
+    font-size: 22.5px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.2);
+    top 54px
+    left 83px
+    +mobile()
+      left 53px
+      top 44px
+
+.service-step
+  h2
+    border-bottom 2px solid $yellow
+    padding-bottom 9px
+    position relative
+    margin-bottom 29px
+    .fa
+      position absolute
+      right 0
+      top 10px
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      color: rgba(0, 0, 0, 0.5);
+
+.service-how
+  font-size: .875em
+  font-weight: 600;
+  color: rgba(45, 45, 45, 0.5);
+  padding-left 60px
+  margin-bottom 15px
+  padding-left 0
+  +mobile()
+    padding-left 30px

@@ -53,7 +53,7 @@ gulp.task("pug", function buildHTML() {
 gulp.task("scripts1", function () {
     return gulp.src([
         "app/libs/jquery/dist/jquery.js",
-        // "app/libs/jquery-ui/jquery-ui.js",
+        "app/libs/jquery-ui/jquery-ui.js",
         // "app/libs/tether/dist/js/tether.js",
     ])
         .pipe(concat("jquery.js"))

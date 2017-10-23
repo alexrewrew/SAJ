@@ -36,6 +36,8 @@
     background $white
     z-index -1
     transitions()
+  &:focus
+    outline none
   &:hover
     .icon-circle--play
       transform rotate(360deg)
@@ -97,6 +99,7 @@
   height 53px
   background $yellow
   margin-bottom 0
+
   &:before
     pseudo(block,absolute)
     width calc(100% + 18px)
@@ -125,6 +128,17 @@
       height 46px
       top calc(50% - 23px)
       left calc(50% - 23px)
+
+.icon-circle.middle.icon-comment
+  span
+    display block
+    overflow hidden
+    border-radius 50%
+    img
+      height 54px
+  &:before, &:after
+    border 1px solid $black
+    background transparent
 
 
 .icon-circle.middle2

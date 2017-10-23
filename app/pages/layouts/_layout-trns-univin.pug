@@ -1,0 +1,42 @@
+include ../utilities/_mixins.pug
+
+doctype html
+
+html
+
+    include ../partials/_head.pug
+
+    body
+        include ../partials/_navigation-trns.pug
+
+        main
+            //include ../partials/_header.pug
+
+            block content
+
+            include ../partials/_footer.pug
+            script(type='text/javascript').
+                $(window).on('load resize', function () {
+                    if (window.matchMedia('(min-width: 992px)').matches) {
+                        $(function () {
+                            var topPos = $('.affix-panel form').offset().top;
+                            $(window).scroll(function () {
+                                var top = $(document).scrollTop(),
+                                    pip = $('.univ-about').offset().top,
+                                    height = $('.affix-panel form').outerHeight();
+                                if (top > topPos && top < pip - height) {
+                                    $('.affix-panel form').addClass('fixed').removeAttr("style");
+                                }
+                                else if (top > pip - height) {
+                                    $('.affix-panel form').removeClass('fixed').css({
+                                        'position': 'absolute',
+                                        'bottom': '0'
+                                    });
+                                }
+                                else {
+                                    $('.affix-panel form').removeClass('fixed');
+                                }
+                            });
+                        });
+                    }
+                });

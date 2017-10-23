@@ -1,0 +1,158 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.service.service-page
+        header.header-regular
+            .container
+                .row.justify-content-end
+                    .col-lg-9
+                        .row.border-yellow
+                            .col-md-5
+                                h1 our news
+                            .col-md-7
+                                ul.list-exchages
+                                    li Exchange Rates
+                                    li $24.5
+                                        i.fa.fa-long-arrow-down
+                                    li $24.5
+                                        i.fa.fa-long-arrow-down
+                                    li $24.5
+                                        i.fa.fa-long-arrow-up
+                        .row
+                            .col-12
+                                ul.list-tags
+                                    li
+                                        a(href='' title='') #университеты
+                                    li
+                                        a(href='' title='') #города
+                                    li
+                                        a(href='' title='') #жизнь в украине
+                                    li
+                                        a(href='' title='') #студенчество
+                                    li
+                                        a(href='' title='') #жизнь в украине
+                                    li
+                                        a(href='' title='') #города
+                                    li
+                                        a(href='' title='') #жизнь в украине
+
+                    .col-lg-3
+                        .row
+                            .col-xl-7.col-md-6.col-lg-12
+                                h2 weather
+                            .col-xl-5.col-md-6.col-lg-12
+                                ul.list-time
+                                    li Local time
+                                    li 12:30
+                        .row.weather-row
+                            .col-xl-4.col-lg-7.col-md-2.col-4
+                                img(src='img/weather/rain.png' title='' alt='').img-weather
+                            .col-xl-3.col-lg-6.col-md-1.col-3
+                                p.weather-text Kyiv
+                                    br
+                                    | Cloudy
+                            .col-xl-5.col-lg-6.col-md-2.col-5
+                                .weather
+                                    p.weather-date 12.09.2017
+                                    p.weather-number +23
+                                        |
+                                        span  0
+                                        | C
+
+        .container
+            .row.justify-content-lg-end
+                .col-lg-9
+                    article
+                        h3 Школы vs. искусственный интеллект. Почему Wolfram Alpha стоит отдать должное
+                        ul.list-article-eye
+                            li
+                                span 4
+                                span Просмотров
+                            li 29.05.2017
+                        ul.list-article-tags
+                            li #университеты
+                            li #тег
+                            li #что-то
+                        img(src='img/illus/new.png' title='' alt='')
+                        p Заявление в электронной форме (электронное заявление) - это заявление, которое вносится абитуриентом в личном электронном кабинете в Единую государственную электронную базу по вопросам образования (далее - Единая база) путем заполнения им в режиме он-лайн электронной формы.
+                        h3 Список документов которые нужны
+                        p В 2017 году для подачи электронного заявления абитуриент должен зарегистрироваться на интернет-сайте по адресу: http://ez.osvitavsim.org.ua (Регистрация электронных кабинетов абитуриентов и загрузка в электронные кабинеты приложений к документам о среднем образовании начинается 29 июня и заканчивается в 18.00 25 июля 2017 года).
+                        iframe(src='https://www.youtube.com/embed/Fus1kX-nFbo', frameborder='0', allowfullscreen='')
+                        p Заявление в электронной форме (электронное заявление) - это заявление, которое вносится абитуриентом в личном электронном кабинете в Единую государственную электронную базу по вопросам образования (далее - Единая база) путем заполнения им в режиме он-лайн электронной формы.
+                        h3 Список документов которые нужны
+                        ul
+                            li Кто-то
+                            li Что-то
+                        ol
+                            li Я
+                            li Я
+                            li Я
+                            li Я
+                            li Я
+                            li Я
+                            li Я
+                            li Ты
+                        .article-border-top
+                        .row
+                            .col-12
+                            .col-6
+                                p.article-share Поделись этим с друзьями
+                            .col-6
+                                ul.list-article-social
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-facebook
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-vk
+                                    li
+                                        a(href='' title='')
+                                            i.fa.fa-google-plus
+                    .article-footer
+                        h3 НОвости которые так же будут интересны
+                        .row
+                            .col-md-6
+                                a(href='' title='').service-container.news-container
+                                    .service-container--image
+                                        img(src='img/service/service1.png' title='')
+                                    .service-container--description
+                                        h3 Приглашение на обучение в Украину
+                                    .news-container--description
+                                        .news-container--description-tags
+                                            ul
+                                                li #университеты
+                                                li #тег
+                                                li #что-то
+                                        .news-container--description-eye
+                                            ul
+                                                li
+                                                    span 4
+                                                    span Просмотров
+                                                li 29.05.2017
+                            .col-md-6
+                                a(href='' title='').service-container.news-container
+                                    .service-container--image
+                                        img(src='img/service/service1.png' title='')
+                                    .service-container--description
+                                        h3 Приглашение на обучение в Украину
+                                    .news-container--description
+                                        .news-container--description-tags
+                                            ul
+                                                li #университеты
+                                                li #тег
+                                                li #что-то
+                                        .news-container--description-eye
+                                            ul
+                                                li
+                                                    span 4
+                                                    span Просмотров
+                                                li 29.05.2017
+
+                .col-lg-3.col-md-6
+                    .banner
+                        img(src='img/news/banner.png' title='' alt='').img-banner

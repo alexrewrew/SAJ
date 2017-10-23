@@ -17,9 +17,189 @@
   position absolute
   top -95px
   cursor pointer
+  z-index 200
 
 .arrow-left
   right 91px
 
 .arrow-right
   right 0
+
+.slider-header
+  position absolute
+  top 0
+  left 0
+  right 0
+  bottom 0
+  overflow hidden
+  z-index 10
+  height: 744px;
+  +tablet()
+    height 569px
+  +portrait()
+    height 428px
+  +mobile()
+    height 600px
+  .slick-dots
+    //bottom 0
+    z-index 200
+    //left 16%
+    display inline-block
+    //width auto
+    bottom 70px
+    width: 1000px;
+    left: auto;
+    right: auto;
+    text-align: left;
+    /* margin: 0 auto; */
+    left: calc(50% - 490px);
+    +tablet()
+      width 800px
+      left calc(50% - 390px);
+    +portrait()
+      bottom 30px
+      width 720px
+      left calc(50% - 350px);
+    +mobile()
+      left 15px
+      bottom 65px
+
+  .slick-dots li button
+    border-radius 50%
+    padding 0
+    opacity .5
+    background #f9f9f9
+    width 12px
+    height 12px
+    border 2px solid $trans
+    &:before
+      color #f9f9f9
+      display none
+
+
+  .slick-dots li.slick-active button
+    border-color $yellow
+    opacity 1
+
+  .arrow
+    top auto
+    bottom 50px
+    background $white
+    +portrait()
+      BOTTOM 10PX
+
+  .arrow-left
+    right 22%
+    +portrait()
+      right 18%
+    +mobile()
+      right 30%
+  .arrow-right
+    right 16%
+    +tablet()
+      right 12%
+    +portrait()
+      right 6%
+    +mobile()
+      right 15px
+
+  .slide
+    display flex
+    justify-content center
+    align-items center
+    overflow hidden
+    img
+      width 100%
+      filter brightness(60%)
+      +mobile()
+        height 600px
+        width auto
+
+
+
+.slider-special
+  border-bottom 1px solid #dbdbdb
+  padding 0
+  margin 56px 0 47px
+  position relative
+  overflow-y visible
+  &:before
+    pseudo(block, absolute)
+    height 100%
+    left 0
+    top 0
+    bottom 0
+    z-index 2
+    width 120px
+    background: linear-gradient(to right, rgba(249,249,249,1) 0%, rgba(249,249,249,1) 52%, rgba(249,249,249,0) 100%);
+    +mobile()
+      display none
+  &:after
+    pseudo(block, absolute)
+    height 100%
+    right 0
+    top 0
+    bottom 0
+    z-index 2
+    width 120px
+    background: linear-gradient(to right, rgba(249,249,249,0) 0%, rgba(249,249,249,1) 48%, rgba(249,249,249,1) 100%);
+    +mobile()
+      display none
+  .mobi
+    +mobile()
+      display none
+  li
+    font-size: 1em
+    line-height: 1.38;
+    text-transform uppercase
+    min-height 35px
+    +mobile()
+      text-align center
+    a
+      color: rgba(0, 0, 0, 0.5);
+      padding-bottom 14px
+      position relative
+      font-weight: 400
+      &:after
+        pseudo(block, absolute)
+        bottom 0px
+        left 0
+        right 0
+        width 100%
+        height 2px
+        background $blue
+        z-index 2
+        opacity 0
+        transitions()
+      &:hover
+        color: $blue
+    a.active
+      color $blue
+      font-weight 700
+      &:after
+        opacity 1
+
+  .slick-arrow
+    position absolute
+    z-index: 20
+    top 0
+    border-radius 50%
+    background transparent
+    color $gray3
+    text-align center
+    font-size 1.125em
+    width 30px
+    height 30px
+    cursor pointer
+    padding-top 5px
+    z-index 10
+    transitions()
+    &:hover
+      transform rotate(360deg)
+      background $gray2
+  .fa-angle-left
+    left 0
+  .fa-angle-right
+    right 0
+
+

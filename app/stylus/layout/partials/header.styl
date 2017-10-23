@@ -29,3 +29,89 @@ header.header-regular
   p
     font-size 1.125em
     margin-bottom 45px
+  .weather-text
+    position absolute
+    bottom 0
+    right 15px
+    font-size .875em
+    margin-bottom 0
+  .weather-date
+    margin-bottom 10px
+    line-height: 1.55;
+    letter-spacing: 0.4px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.5);
+    font-size .875em
+    font-weight 700
+  .weather-number
+    line-height 1
+    margin-bottom 0
+    font-size: 2.125em
+    font-weight: bold;
+    text-align: right;
+    color: #2d2d2d;
+    span
+      font-size .5em
+      position relative
+      top -16px
+
+header.header-univer
+  position relative
+  height: 744px;
+  overflow hidden
+  +tablet()
+    height 569px
+  +portrait()
+    height 428px
+  +mobile()
+    height 600px
+  .container
+    position relative
+    height 100%
+    .row
+      height 100%
+      +tablet()
+        padding-top: 60px;
+      .header-heading
+        z-index: 20
+        +portrait()
+          margin-top -65px
+        +mobile()
+          margin-top -95px
+  h1
+    font-size: 2.125em
+    font-weight: 900;
+    line-height normal
+    margin-bottom 43px
+    +tablet()
+      font-size 1.75em
+    +portrait()
+      margin-bottom 23px
+    +mobile()
+      font-size 1.5em
+      margin-bottom 23px
+  p
+    color $white
+    font-size 1.125em
+
+header.faq-header
+  background $white
+  padding 84px
+  margin-bottom 10px
+  +mobile()
+    padding-right 20px
+    padding-left 20px
+  h2
+    border-bottom 1px solid $yellow
+    padding-bottom 29px
+    margin-bottom 29px
+
+header.header-contact
+  h1, h2
+    border-bottom 1px solid $yellow
+    padding-bottom 20px
+
+    margin-bottom 38px
+  p
+    margin-bottom 10px
+    font-size 1em
