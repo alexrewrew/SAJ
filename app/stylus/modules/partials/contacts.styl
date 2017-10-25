@@ -55,23 +55,34 @@
 
 #map
   width 100%
-  height 500px
-  margin 30px 0
+  height 420px
+  +portrait()
+    height 400px
+  //margin 30px 0
 
 .tab-map
-  height 0
-  overflow hidden
+  position absolute
+  top 0
+  left auto
+  width 100%
+  height auto
+  z-index 50
+  right -100vw
+  opacity 0
   transitions()
-  +mobile()
-    height auto
+  +portrait()
+    position static
+    margin-bottom 30px
+
 
 .tab-map.open
-  height 560px
-
-
+  right 0
+  opacity 1
 
 #tab-change
   display block
+  text-transform uppercase
+  font-weight 700
   .one
     display inline
   .two
