@@ -117,8 +117,7 @@ ol
   margin-bottom 15px
   padding-left 0
   +mobile()
-    padding-left 30px
-    padding-right 30px
+    padding 0
     flex-wrap wrap
     justify-content space-between
   li
@@ -174,7 +173,12 @@ ol
 
 .footer-social.list-social
   margin 45px 0
+  +mobile()
+    justify-content flex-start
   li
+    +mobile()
+      margin-left 0
+      margin-right 40px
     a
       opacity: 0.5;
       color: #001825

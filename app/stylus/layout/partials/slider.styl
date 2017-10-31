@@ -1,6 +1,18 @@
 @import '../../utilities/vars'
 @import '../../utilities/mixins'
 
+.slick-loading .slick-list
+  background: #fff url('../img/slick//ajax-loader.gif') center center no-repeat;
+
+@font-face
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/slick/slick.eot');
+  src: url('../fonts/slick/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick/slick.woff') format('woff'), url('../fonts/slick/slick.ttf') format('truetype'), url('../fonts/slick/slick.svg#slick') format('svg');
+
+
+
 .slider
   border-top 1px solid #e2e2e2
   padding-top 30px
@@ -18,6 +30,8 @@
   top -95px
   cursor pointer
   z-index 200
+  +mobile()
+    top -60px
 
 .arrow-left
   right 91px
@@ -155,6 +169,8 @@
     min-height 35px
     +mobile()
       text-align center
+      &:first-child, &:last-child
+        display none
     a
       color: rgba(0, 0, 0, 0.5);
       padding-bottom 14px

@@ -4,6 +4,9 @@
 section
   padding-top 133px
   padding-bottom 122px
+  +mobile()
+    padding-top 70px
+    padding-bottom 70px
 
 article
   background $white
@@ -15,10 +18,16 @@ article
   img
     width 100%
     margin-bottom 30px
+    +mobile()
+      width: calc(100% + 30px);
+      margin-left: -15px;
   iframe
     height 350px
     width 100%
     margin-bottom 30px
+    +mobile()
+      width: calc(100% + 30px);
+      margin-left: -15px;
   p
     margin-bottom 30px
   h3
@@ -115,4 +124,5 @@ main
   +mobile()
     position relative
     z-index 100
+    padding-top 60px
 
