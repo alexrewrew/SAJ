@@ -36,6 +36,10 @@ nav.nav-transparent
     background $trans
     color $white
     border-color $white
+    &:hover
+      border: 1px solid #ffba00;
+      background: #ffba00;
+      color: #000;
     +mobile()
       color: #000;
       border: 1px solid #ffba00;
@@ -135,7 +139,7 @@ nav.nav-white
         font-size .75em
       +mobile()
         display inline-block
-        padding 7px 0
+        padding 8px 0
 
 .menu-lang
   display flex
@@ -176,6 +180,8 @@ nav.nav-white
       color $gray-text
       +displays()
         font-size .875em
+      +mobile()
+        padding 8px 0
       &:hover
         color: $blue
 
@@ -257,7 +263,7 @@ nav.nav-white
     border 0
     margin 0
     text-align center
-    padding: 7px 0;
+    padding: 8px 0;
     span
       position relative
       &:after

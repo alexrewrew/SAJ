@@ -2,7 +2,8 @@
 @import "../../utilities/mixins"
 
 /* BUTTON */
-button {}
+button
+  transitions()
 
 .button
   display inline-block
@@ -19,7 +20,8 @@ button {}
   font-size .875em
   cursor pointer
   &:hover
-    color inherit
+    background  $yellow2
+    color $black
 
 .button.big
   max-width 231px

@@ -100,6 +100,25 @@ $(document).ready(function () {
         dots: true
     });
 
+    $(".slider-help").slick({
+        slide: ".slide",
+        arrows: false,
+        // nextArrow: "<div class='arrow arrow-right'><i class='fa fa-long-arrow-right'></i></div>",
+        // prevArrow: "<div class='arrow arrow-left'><i class='fa fa-long-arrow-left'></i></div>",
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
+    });
+
     $('.slider-special').slick({
         infinite: true,
         slidesToShow: 4,

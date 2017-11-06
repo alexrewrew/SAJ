@@ -10,11 +10,11 @@ block content
         header.header-regular
             .container
                 .row.justify-content-center
-                    .col-lg-5.col-md-8
+                    .col-lg-4.col-md-8
                         a(href='' title='').link-back
                             i.fa.fa-long-arrow-left
                             | back to FAQ
-                    .col-lg-2.col-md-4
+                    .col-lg-3.col-md-4
                         ul.list-steps
                             li
                                 a(href='' title='').active 1 step
@@ -22,92 +22,367 @@ block content
                                 a(href='' title='') 2 step
                             li
                                 a(href='' title='') 3 step
+                            li
+                                a(href='' title='') 4 step
                     .col-lg-3
 
                 .row.justify-content-center
                     .col-lg-7
                         form.form-contact-mail
                             #step1
+                                // Первый шаг выбора услуги
                                 h2.heading-hr.header-border Выберете услугу
                                 p Вы можете выбрать желаемую для вас улугу
                                 .radiobutton
-                                    input#radio1(type='radio' name="gender" value="One").error
-                                    label(for='radio1') Легализация документов
-
-                                .radiobutton
-                                    input#radio2(type='radio' name="gender" value="Two")
-                                    label(for='radio2') Перевод из ВУЗа в ВУЗ
-
-                                .radiobutton
-                                    input#radio3(type='radio' name="gender" value="Three")
-                                    label(for='radio3') Приглашение на обучение
-
-                                .radiobutton
-                                    input#radio4(type='radio' name="gender" value="Four")
-                                    label(for='radio4') Подготовительные курсы
-
-                                .radiobutton
-                                    input#radio5(type='radio' name="gender" value="Five")
+                                    input#radio1(type='radio' name="gender" value="Five")
                                     label(for='radio5') Поиск университета
 
                                 .radiobutton
+                                    input#radio2(type='radio' name="gender" value="One").error
+                                    label(for='radio1') Легализация документов
+
+                                .radiobutton
+                                    input#radio3(type='radio' name="gender" value="Two")
+                                    label(for='radio2') Перевод из ВУЗа в ВУЗ
+
+                                .radiobutton
+                                    input#radio4(type='radio' name="gender" value="Three")
+                                    label(for='radio3') Приглашение на обучение
+
+                                .radiobutton
+                                    input#radio5(type='radio' name="gender" value="Three")
+                                    label(for='radio3') Подготовительные курсы
+
+                                .radiobutton
                                     input#radio6(type='radio' name="gender" value="Six")
-                                    label(for='radio6') Помощь при поступление в университет
+                                    label(for='radio6') Ассистанс
                                 button(type='submit').button Next
                             #step2
-                                h2.heading-hr.header-border Выберете услугу
-                                h3.black Контактная информация
-                                p Заполните поля что бы нам было проще вас ввезти в украину
-                                .form-contact-mail
-                                    input(type='text' placeholder='Имя')
-                                    input(type='email' placeholder='Почта')
-                                    input(type='tel' placeholder='Телефон')
-                                    input(type='text' placeholder='Страна проживания')
-                                .spacer
-                                h3.black Место проживание
-                                p Заполните поля что бы нам было проще вас ввезти в украину
-                                .form-contact-address
-                                    input(type='text' placeholder='Город проживания')
-                                    input(type='text' placeholder='Индекс').input-small
-                                    input(type='text' placeholder='Адрес')
-                                    input(type='text' placeholder='Дом').input-small
-                                    input(type='text' placeholder='Квартира')
-                                    button(type='submit').button Next
+                                //.form-path-1-step-2
+                                    h2.heading-hr.header-border Поиск университета
+                                    h3.black Контактная информация
+                                    p Заполните поля что бы нам было проще вас ввезти в Украину
+                                    .form-contact-mail
+                                        input(type='text' placeholder='Имя')
+                                        input(type='email' placeholder='Почта')
+                                        input(type='tel' placeholder='Телефон')
+                                        input(type='text' placeholder='Страна проживания')
+                                    .spacer
+                                    h3.black Место проживания
+                                    p Заполните поля что бы нам было проще вас ввезти в украину
+                                    .form-contact-address
+                                        input(type='text' placeholder='Город проживания')
+                                        input(type='text' placeholder='Индекс').input-small
+                                        input(type='text' placeholder='Адрес')
+                                        input(type='text' placeholder='Дом').input-small
+                                        input(type='text' placeholder='Квартира')
+                                        button(type='submit').button Next
+                                //.form-path-2-step-2
+                                    h2.heading-hr.header-border Легализация документов
+                                    h3.black Личная информация
+                                    p На кого будет сделан пригласительный от университета
+                                    .form-contact-mail
+                                        input(type='text' placeholder='Имя')
+                                        input(type='email' placeholder='Почта')
+                                        input(type='tel' placeholder='Телефон')
+                                        .upload-group
+                                            .question-mark
+                                                span !
+                                                .answer-mark
+                                                    p Приглашение на обучение — официальный документ, который выдает ваш университет. Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                            .uploadbutton.uploaded
+                                                p Загран. паспорт
+                                                input#upload1(type='file').uploaded
+                                                label(for='upload1')
+                                                    i.fa.fa-camera
+                                                    i.fa.fa-check
+                                                p
+                                                    span Загрузить
+                                                    span Загружено
+                                            .uploadbutton
+                                                p Документ для нострификации
+                                                input#upload2(type='file').uploaded
+                                                label(for='upload2')
+                                                    i.fa.fa-camera
+                                                    i.fa.fa-check
+                                                p
+                                                    span Загрузить
+                                                    span Загружено
+                                        button(type='submit').button Next
+
+                                //.form-path-3-step-2
+                                    h2.heading-hr.header-border Перевод из ВУЗа в ВУЗ
+                                    h3.black Личная информация
+                                    p Кто будет переводиться
+                                    .form-contact-mail
+                                        input(type='text' placeholder='Имя')
+                                        input(type='email' placeholder='Почта')
+                                        input(type='tel' placeholder='Телефон')
+                                        .upload-group
+                                            .question-mark
+                                                span !
+                                                .answer-mark
+                                                    p Выписка с пройденными часами из вашего университета
+                                            .uploadbutton.uploaded
+                                                p Загран. паспорт
+                                                input#upload1(type='file').uploaded
+                                                label(for='upload1')
+                                                    i.fa.fa-camera
+                                                    i.fa.fa-check
+                                                p
+                                                    span Загрузить
+                                                    span Загружено
+                                            .uploadbutton
+                                                p Академ. справка
+                                                input#upload2(type='file').uploaded
+                                                label(for='upload2')
+                                                    i.fa.fa-camera
+                                                    i.fa.fa-check
+                                                p
+                                                    span Загрузить
+                                                    span Загружено
+                                        button(type='submit').button Next
+
+                                //.form-path-4-step-2
+                                    h2.heading-hr.header-border Приглашение на обучение
+                                    h3.black Личная информация
+                                    p На кого будет сделан пригласительный от университета
+                                    .form-contact-mail
+                                        input(type='text' placeholder='Имя')
+                                        input(type='email' placeholder='Почта')
+                                        input(type='tel' placeholder='Телефон')
+                                        .upload-group
+                                            .question-mark
+                                                span !
+                                                .answer-mark
+                                                    p Выписка с пройденными часами из вашего университета
+                                            .uploadbutton.uploaded
+                                                p Загран. паспорт
+                                                input#upload1(type='file').uploaded
+                                                label(for='upload1')
+                                                    i.fa.fa-camera
+                                                    i.fa.fa-check
+                                                p
+                                                    span Загрузить
+                                                    span Загружено
+                                        button(type='submit').button Next
+
+                                .form-path-5-step-2
+                                        h2.heading-hr.header-border Подготовительные курсы
+                                        h3.black Контактная информация
+                                        .form-contact-mail
+                                            input(type='text' placeholder='Имя')
+                                            input(type='email' placeholder='Почта')
+                                            input(type='tel' placeholder='Телефон')
+                                            input(type='text' placeholder='Страна проживания')
+                                            button(type='submit').button Next
+                                //.form-path-6-step-2
+                                    h2.heading-hr.header-border Асситанс
+                                    h3.black Контактная информация
+                                    .form-contact-mail
+                                        input(type='text' placeholder='Имя')
+                                        input(type='email' placeholder='Почта')
+                                        input(type='tel' placeholder='Телефон')
+                                        input(type='text' placeholder='Страна проживания')
+                                        input(type='text' placeholder='Город проживания')
+                                        button(type='submit').button Next
+
                             #step3
-                                h2.heading-hr.header-border Выберете услугу
-                                h3.black Ваши документы
-                                p Заполните поля что бы нам было проще вас ввезти в украину
-                                .upload-group
-                                    .question-mark
-                                        span !
-                                        .answer-mark
-                                            p Приглашение на обучение — официальный документ, который выдает ваш университет. Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
-                                    .uploadbutton.uploaded
-                                        p Загран. паспорт
-                                        input#upload1(type='file').uploaded
-                                        label(for='upload1')
-                                            i.fa.fa-camera
-                                            i.fa.fa-check
-                                        p
-                                            span Загрузить
-                                            span Загружено
-                                    .uploadbutton
-                                        p Загран. паспорт
-                                        input#upload2(type='file').uploaded
-                                        label(for='upload2')
-                                            i.fa.fa-camera
-                                            i.fa.fa-check
-                                        p
-                                            span Загрузить
-                                            span Загружено
-                                h3.black Ваш комментарий
-                                p Укажите ваши пожелания к чему то там и больше ошибок
-                                textarea(placeholder='You text')
-                                button(type='submit').button Send
+                                //.form-path-1-step-3
+                                    h2.heading-hr.header-border Поиск университета
+                                    h3.black Критерии поиска университета
+                                    p Напиши что нам нужно найти
+                                    .form-flex
+                                        .select-container
+                                            select
+                                                option Страна
+                                                option Страна
+                                        .select-container
+                                            select
+                                                option Город
+                                                option Город
+                                        .select-container
+                                            select
+                                                option Университет
+                                                option Университет
+                                        .select-container
+                                            select
+                                                option Форма обучения
+                                                option Форма обучения
+                                        .select-container
+                                            select
+                                                option Степень обучения
+                                                option Степень обучения
+                                        input(type='text' placeholder='Предыдущий диплом. Например: массажист-гироскутер' disabled)
+                                        .select-container
+                                            select
+                                                option Направление
+                                                option Направление
+                                        input(type='text' placeholder='Кем ты хочешь стать?' disabled)
+                                        .select-container
+                                            select
+                                                option Язык обучения
+                                                option Язык обучения
+                                        input(type='text' placeholder='Оцени свои знания языка' disabled)
+                                        button(type='submit').button Next
+                                //.form-path-3-step-3
+                                    h2.heading-hr.header-border Перевод из ВУЗа в ВУЗ
+                                    h3.black Требования к университету
+                                    p Выберете куда хотите перевестись
+                                    .form-flex
+                                        .select-container
+                                            select
+                                                option Страна
+                                                option Страна
+                                        .select-container
+                                            select
+                                                option Город
+                                                option Город
+                                        .select-container
+                                            select
+                                                option Университет
+                                                option Университет
+                                        .select-container
+                                            select
+                                                option Форма обучения
+                                                option Форма обучения
+                                        .select-container
+                                            select
+                                                option Степень обучения
+                                                option Степень обучения
+                                        input(type='text' placeholder='Предыдущий диплом. Например: массажист-гироскутер' disabled)
+                                        .select-container
+                                            select
+                                                option Направление
+                                                option Направление
+                                        input(type='text' placeholder='Кем ты хочешь стать?' disabled)
+                                        .select-container
+                                            select
+                                                option Язык обучения
+                                                option Язык обучения
+                                        input(type='text' placeholder='Оцени свои знания языка' disabled)
+                                        button(type='submit').button Next
+                                //.form-path-4-step-3
+                                    h2.heading-hr.header-border Приглашение на обучение
+                                    h3.black Требования к университету
+                                    p Выберете куда хотите перевестись
+                                    .form-flex
+                                        .select-container
+                                            select
+                                                option Страна
+                                                option Страна
+                                        .select-container
+                                            select
+                                                option Город
+                                                option Город
+                                        .select-container
+                                            select
+                                                option Университет
+                                                option Университет
+                                        .select-container
+                                            select
+                                                option Форма обучения
+                                                option Форма обучения
+                                        .select-container
+                                            select
+                                                option Степень обучения
+                                                option Степень обучения
+                                        input(type='text' placeholder='Предыдущий диплом. Например: массажист-гироскутер' disabled)
+                                        .select-container
+                                            select
+                                                option Направление
+                                                option Направление
+                                        input(type='text' placeholder='Кем ты хочешь стать?' disabled)
+                                        .select-container
+                                            select
+                                                option Язык обучения
+                                                option Язык обучения
+                                        input(type='text' placeholder='Оцени свои знания языка' disabled)
+                                        button(type='submit').button Next
+                                .form-path-5-step-3
+                                    h2.heading-hr.header-border Подготовительные курсы
+                                    h3.black Требования к университету
+                                    p Выберете куда хотите перевестись
+                                    .form-flex
+                                        .select-container
+                                            select
+                                                option Страна
+                                                option Страна
+                                        .select-container
+                                            select
+                                                option Город
+                                                option Город
+                                        .select-container
+                                            select
+                                                option Университет
+                                                option Университет
+                                        .select-container
+                                            select
+                                                option Язык обучения
+                                                option Язык обучения
+                                        button(type='submit').button Next
                             #step4
-                                img(src='img/illus/like.png' title='' alt='').img-like
-                                h2.black.heading-hr.header-border Ваши документы
-                                p Мы обрабатываем вашу заявку, ожидайте ответа от нашего менеджера после уточнения информации.
-                                a(href='' title='').button OK
+                                //.form-path-1-step-4
+                                    h2.heading-hr.header-border Поиск университета
+                                    h3.black Пожелания
+                                    textarea(placeholder='Пример: мне нужен только государственный университет')
+                                    button(type='submit').button Submit
+                                //.form-path-2-step-4
+                                    h2.heading-hr.header-border Легализация документов
+                                    h3.black Пожелания
+                                    textarea(placeholder='Пример: отправьте мне письмо только голубиной почтой')
+                                    button(type='submit').button Submit
+                                //.form-path-3-step-4
+                                    h2.heading-hr.header-border Перевод из ВУЗа в ВУЗ
+                                    h3.black Пожелания
+                                    textarea(placeholder='Пример: мне нужен только государственный университет')
+                                    button(type='submit').button Submit
+                                //.form-path-4-step-4
+                                    h2.heading-hr.header-border Приглашение на обучение
+                                    h3.black Контактная информация
+                                    p Укажите адрес куда отправлять пригласительное письмо от университета
+                                    .form-contact-address
+                                        input(type='text' placeholder='Страна проживания')
+                                        input(type='text' placeholder='Город проживания')
+                                        input(type='text' placeholder='Индекс').input-small
+                                        input(type='text' placeholder='Адрес')
+                                        input(type='text' placeholder='Дом').input-small
+                                        input(type='text' placeholder='Квартира')
+                                        button(type='submit').button Next
+
+
+
+                                .form-path-5-step-4
+                                    h2.heading-hr.header-border Подготовительные курсы
+                                    h3.black Пожелания
+                                    textarea(placeholder='Пример: мне нужен только государственный университет')
+                                    button(type='submit').button Submit
+
+
+
+                                //.form-path-6-step-4
+                                    h2.heading-hr.header-border Асситанс
+                                    h3.black Пожелания
+                                    textarea(placeholder='Пример: мне нужен только государственный университет')
+                                    button(type='submit').button Submit
+
+
+
+
+
+                            //
+                            //    h2.heading-hr.header-border Выберете услугу
+                            //    h3.black Ваши документы
+                            //    p Заполните поля что бы нам было проще вас ввезти в украину
+                            //
+                            //    h3.black Ваш комментарий
+                            //    p Укажите ваши пожелания к чему то там и больше ошибок
+                            //    textarea(placeholder='You text')
+                            //    button(type='submit').button Send
+                            //#step4
+                            //    img(src='img/illus/like.png' title='' alt='').img-like
+                            //    h2.black.heading-hr.header-border Ваши документы
+                            //    p Мы обрабатываем вашу заявку, ожидайте ответа от нашего менеджера после уточнения информации.
+                            //    a(href='' title='').button OK
 
                     .col-lg-3

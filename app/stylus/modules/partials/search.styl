@@ -45,3 +45,67 @@
       margin-right 15px
       margin-bottom 15px
 
+.search-result
+  display none
+
+.search-result.visible
+  display flex
+
+.search-result--copyright
+  font-size 1.125em
+  margin-bottom 1rem
+  .qmark
+    border-radius 50%
+    width: 24px;
+    height: 24px;
+    background-color: #ffcc00;
+    display block
+    text-align center
+    padding-top 1px
+    margin-right 30px
+    float left
+  .sr-text
+    display block
+    float left
+
+.search-container
+  form
+    .select-container
+      padding 0
+      border-radius: 30px;
+      width 90% !important
+      &:before
+        right 0
+  .chosen-container.chosen-container-single
+    height 56px
+    border-radius: 30px;
+    width 98% !important
+    .chosen-single
+      height 56px
+      display block
+      background $white
+      border-radius: 30px;
+      &:hover
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      span
+        padding 16px 0
+        border-radius: 30px;
+        transitions()
+    .chosen-drop
+      margin-top -10px
+      border-bottom-left-radius 30px
+      border-bottom-right-radius 30px
+      box-shadow: 0px 3px 1px .5px rgba(0,0,0,0.75);
+      padding 20px 0
+    .chosen-results li.active-result
+        padding 8px 0
+  .chosen-container-single .chosen-single div b
+    background: url(../img/chosen/chosen-sprite.png) no-repeat 0 17px;
+  .chosen-container.chosen-container-single.chosen-container-active.chosen-with-drop
+    .chosen-single
+      border-bottom-left-radius 0
+      border-bottom-right-radius 0
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+      span
+        border-bottom-left-radius 0
+        border-bottom-right-radius 0

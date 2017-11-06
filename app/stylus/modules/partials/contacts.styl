@@ -51,7 +51,11 @@
             color $white
     h3
       text-align center
-      margin-bottom 50px
+      margin-bottom 10px
+    p
+      text-align center
+      color $white
+      margin-bottom 35px
 
 #map
   width 100%
@@ -62,25 +66,27 @@
 .tab-map
   position absolute
   top 0
-  left auto
-  width 100%
+  left -100vw
+  width 166%
   height auto
   z-index 50
-  right -100vw
+  right 0
   opacity 0
   transitions()
   +portrait()
     position static
     margin-bottom 30px
     opacity 1
+    width 100%
   +mobile()
     position static
     margin-bottom 30px
     opacity 1
+    width 100%
 
 
 .tab-map.open
-  right 0
+  left auto
   opacity 1
 
 #tab-change
