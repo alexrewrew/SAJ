@@ -18,12 +18,12 @@
     justify-content center
     align-items center
     img
-      height 100%
+      width 110%
   &--description
     position absolute
     top 0
-    left 0
-    right 0
+    left 15px
+    right 15px
     bottom 0
     background rgba(0, 0, 0, .4)
     display flex
@@ -105,3 +105,17 @@
     display none
   .two
     display inline
+
+
+.team-contacts
+  display flex
+  flex-wrap wrap
+  .team-container
+    flex 1 1 33.333333%
+    max-width 33.333333%
+    padding 0 15px
+    +portrait()
+      flex 1 1 50%
+      max-width 50%
+    &:focus
+      outline none

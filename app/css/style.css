@@ -5539,13 +5539,13 @@ footer .button {
 	        align-items: center;
 }
 .team-container--image img {
-	height: 100%;
+	width: 110%;
 }
 .team-container--description {
 	position: absolute;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 15px;
+	right: 15px;
 	bottom: 0;
 	background: rgba(0,0,0,.4);
 	display: -webkit-box;
@@ -5668,4 +5668,33 @@ footer .button {
 }
 #tab-change.open .two {
 	display: inline;
+}
+.team-contacts {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.team-contacts .team-container {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 33.333333%;
+	    -ms-flex: 1 1 33.333333%;
+	        flex: 1 1 33.333333%;
+	max-width: 33.333333%;
+	padding: 0 15px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.team-contacts .team-container {
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 50%;
+		    -ms-flex: 1 1 50%;
+		        flex: 1 1 50%;
+		max-width: 50%;
+	}
+}
+.team-contacts .team-container:focus {
+	outline: none;
 }

@@ -103,8 +103,6 @@ $(document).ready(function () {
     $(".slider-help").slick({
         slide: ".slide",
         arrows: false,
-        // nextArrow: "<div class='arrow arrow-right'><i class='fa fa-long-arrow-right'></i></div>",
-        // prevArrow: "<div class='arrow arrow-left'><i class='fa fa-long-arrow-left'></i></div>",
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
@@ -115,6 +113,27 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     slidesToScroll: 2
                 }
+            }
+        ]
+    });
+
+    $(".team-contacts").slick({
+        slide: ".team-container",
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 9999,
+                settings: "unslick"
             }
         ]
     });
