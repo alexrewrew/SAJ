@@ -23,11 +23,11 @@
         background $black
         z-index 100
         opacity .1
+        +mobile()
+          display none
       &:nth-child(3)
         &:before
           display none
-          +mobile()
-            display block
       +mobile()
         border 0
         &:after
@@ -73,7 +73,7 @@
     .select-container
       padding 0
       border-radius: 30px;
-      width 90% !important
+      width 100% !important
       &:before
         right 0
   .chosen-container.chosen-container-single

@@ -9,9 +9,13 @@
   position relative
   overflow hidden
   cursor pointer
+  +mobile()
+    height 520px
   &:hover
     .team-container--description
       transform none
+      +mobile()
+        transform translateY(-70px)
   &--image
     overflow hidden
     display flex
@@ -31,6 +35,10 @@
     justify-content flex-end
     transform translateY(-100%)
     transitions()
+    +mobile()
+      background transparent
+      transform translateY(-70px)
+      position static
     ul
       display flex
       justify-content center
@@ -52,10 +60,15 @@
     h3
       text-align center
       margin-bottom 10px
+      +mobile()
+        color $black
     p
       text-align center
       color $white
       margin-bottom 35px
+      +mobile()
+        margin-bottom 15px
+        color $black
 
 #map
   width 100%

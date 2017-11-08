@@ -2383,6 +2383,12 @@ select {
 		color: #7f7f7f;
 		padding-left: 20px;
 		border: none;
+		background: transparent;
+		padding: 5px 20px;
+		margin: 10px 0;
+	}
+	select:focus {
+		color: #000;
 	}
 }
 select:focus {
@@ -4001,13 +4007,13 @@ footer .button {
 	z-index: 100;
 	opacity: .1;
 }
+@media (max-width: 767px) {
+	.search-container form .select-container:before {
+		display: none;
+	}
+}
 .search-container form .select-container:nth-child(3):before {
 	display: none;
-}
-@media (max-width: 767px) {
-	.search-container form .select-container:nth-child(3):before {
-		display: block;
-	}
 }
 @media (max-width: 767px) {
 	.search-container form .select-container {
@@ -4071,7 +4077,7 @@ footer .button {
 .search-container form .select-container {
 	padding: 0;
 	border-radius: 30px;
-	width: 90% !important;
+	width: 100% !important;
 }
 .search-container form .select-container:before {
 	right: 0;
@@ -5518,10 +5524,22 @@ footer .button {
 	overflow: hidden;
 	cursor: pointer;
 }
+@media (max-width: 767px) {
+	.team-container {
+		height: 520px;
+	}
+}
 .team-container:hover .team-container--description {
 	-webkit-transform: none;
 	    -ms-transform: none;
 	        transform: none;
+}
+@media (max-width: 767px) {
+	.team-container:hover .team-container--description {
+		-webkit-transform: translateY(-70px);
+		    -ms-transform: translateY(-70px);
+		        transform: translateY(-70px);
+	}
 }
 .team-container--image {
 	overflow: hidden;
@@ -5568,6 +5586,15 @@ footer .button {
 	     -o-transition: all .4s ease;
 	        transition: all .4s ease;
 }
+@media (max-width: 767px) {
+	.team-container--description {
+		background: transparent;
+		-webkit-transform: translateY(-70px);
+		    -ms-transform: translateY(-70px);
+		        transform: translateY(-70px);
+		position: static;
+	}
+}
 .team-container--description ul {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -5600,10 +5627,21 @@ footer .button {
 	text-align: center;
 	margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+	.team-container--description h3 {
+		color: #000;
+	}
+}
 .team-container--description p {
 	text-align: center;
 	color: #fff;
 	margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+	.team-container--description p {
+		margin-bottom: 15px;
+		color: #000;
+	}
 }
 #map {
 	width: 100%;
