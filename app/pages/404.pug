@@ -1,0 +1,18 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Главная страница
+
+block content
+
+    section.services-page.service.section-404
+        header.header-regular
+            .container
+                .row.justify-content-lg-center
+                    .col-lg-10.col-md-12.col-8
+                        .block-404
+                            p Ooooppss...
+                            h1.big 404
+                            p Эта страница не найдена или была удалена
+                            a(href='index.html' title='').button.big На главную

@@ -113,6 +113,8 @@ nav.nav-white
   +mobile()
     flex-direction column
     padding 0
+  +landscape()
+    flex-direction row
   li
     margin-right 39px
     &:last-child
@@ -127,6 +129,9 @@ nav.nav-white
       margin-right 34px
     +portrait()
       margin-right 10px
+    +landscape()
+      flex 1 1 50%
+      max-width 50%
     a
       display block
       font-size: .875em
@@ -140,6 +145,8 @@ nav.nav-white
       +mobile()
         display inline-block
         padding 8px 0
+      +landscape()
+        padding 5px 0
 
 .menu-lang
   display flex
@@ -255,6 +262,9 @@ nav.nav-white
   display none
   +mobile()
     display block
+  +landscape()
+    h4
+      padding 5px 0
 
 .nav-panel
   +mobile()

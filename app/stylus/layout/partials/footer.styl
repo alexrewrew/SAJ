@@ -128,8 +128,9 @@ footer
   display flex
   flex-direction row
   flex-wrap nowrap
+  margin-bottom 1rem
   +mobile()
-    margin-bottom 3rem
+    margin-bottom 2rem
     justify-content center
   li
     margin-right 30px
@@ -139,3 +140,9 @@ footer
       color $white
       &:hover
         opacity .5
+
+.footer-copyright
+  color $white
+  font-size .688em
+  +mobile()
+    text-align center
