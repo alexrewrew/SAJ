@@ -1370,6 +1370,40 @@ p {
 h1.big {
 	font-size: 4em !important;
 }
+blockquote {
+	padding: 6rem;
+	position: relative;
+	margin-top: 1rem;
+}
+@media (max-width: 767px) {
+	blockquote {
+		padding: 6rem 2rem;
+	}
+}
+blockquote h3 {
+	border-bottom: 1px solid #dbdbdb;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem !important;
+	color: #000 !important;
+}
+blockquote p {
+	font-style: italic;
+}
+blockquote:before {
+	content: open-quote;
+	position: absolute;
+	display: block;
+	left: 6rem;
+	top: 0;
+	color: #fc0;
+	font-size: 8em;
+	line-height: 1;
+}
+@media (max-width: 767px) {
+	blockquote:before {
+		left: 2rem;
+	}
+}
 a {
 	text-decoration: none;
 	-webkit-transition: all .4s ease;
@@ -4392,6 +4426,9 @@ footer .button {
 	top: -3px;
 	left: 0;
 }
+.univ-benefits-list li.benefit-no {
+	opacity: .5;
+}
 .univ-benefits-list li.benefit-no:after {
 	border: 1px solid #000;
 	background: #fff;
@@ -5562,6 +5599,7 @@ footer .button {
 	line-height: 1.55;
 	letter-spacing: .4px;
 	position: relative;
+	margin-bottom: 0;
 }
 @media (max-width: 767px) {
 	.faq-page .ui-accordion .ui-accordion-header {
@@ -5610,6 +5648,7 @@ footer .button {
 .faq-page .ui-accordion .ui-accordion-content {
 	padding: 52px 94px 52px 181px;
 	position: relative;
+	background: #fff;
 }
 @media (max-width: 767px) {
 	.faq-page .ui-accordion .ui-accordion-content {

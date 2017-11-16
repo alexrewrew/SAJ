@@ -80,3 +80,28 @@ p
 
 h1.big
   font-size 4em !important
+
+blockquote
+  padding 6rem
+  position relative
+  margin-top 1rem
+  +mobile()
+    padding 6rem 2rem
+  h3
+    border-bottom 1px solid #dbdbdb
+    padding-bottom 1rem
+    margin-bottom 2rem !important
+    color $black !important
+  p
+    font-style italic
+  &:before
+    content open-quote
+    position absolute
+    display block
+    left 6rem
+    top 0
+    color $yellow
+    font-size 8em
+    line-height 1
+    +mobile()
+      left 2rem
