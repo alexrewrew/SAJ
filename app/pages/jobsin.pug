@@ -1,0 +1,114 @@
+//- layouts/layout.pug
+extend layouts/_layout-jobs.pug
+
+block title
+    | Главная страница
+
+block content
+
+
+    header.header-univer.header-job
+        .container
+            .row.align-items-center
+                .col-lg-1
+                .col-lg-6.col-md-10.header-heading
+                    h1 Sales Manager wanted
+                    p in our friendly team this place is for you
+                    a(href='#job' title='').smooth.header-job--arrow
+                        i.fa.fa-long-arrow-down
+
+        img(src='img/jobs/job-head.png').header-job--back
+
+    section.univ-main#job
+        .container.degree
+            .row
+                .col-lg-1
+                .col-lg-6.job-article
+                    h2 Sales Manager wanted
+                    p in our friendly team this place is for you
+                    p
+                        b Study & Journey
+                        |  - образовательное агентство полного цикла.
+                        | Мы помогаем абитуриентам и студентам поступить в зарубежные университеты.
+                        br
+                        | Наша миссия оказать помощь в выборе обучающей программы и подборе правильного учебного заведения зарубежом.
+                        | А само поступление в университет сделать легким и комфортным.
+                    p Мы растем и нам нужен -
+                        b  Менеджер по продажам образовательных программ.
+                    .job-article--section
+                        h3 С НАМИ ТЫ БУДЕШЬ
+                        ul
+                            li - Зарабатывать от 1000$;
+                            li - Путешествовать, организовывая образовательные выставки по учебным заведениям;
+                            li - Ну и естественно очень круто прокачаешь себя.
+                    .job-article--section
+                        h3 ТРЕБОВАНИЯ
+                        ul
+                            li - Владение английским языком на уровне не ниже Upper-Intermediate;
+                            li - Хорошие коммуникативные навыки, грамотная и уверенная речь;
+                            li - Нацеленность на результат, умение убеждать;
+                            li - Ответственность, быстрая обучаемость,
+                            li - Позитивное мышление, проактивность.
+                    .job-article--section
+                        h3 Обязанности:
+                        ul
+                            li - Работа с текущей базой клиентов;
+                            li - Общение с клиентами посредством деловой переписки, IP телефонии;
+                            li - Работа с CRM;
+                            li - Проведение презентаций, переговоров с потенциальными клиентами;
+                            li - Работа с консульствами: подготовка пакетов документов для визы;
+                            li - Поиск  и привлечение новых клиентов.
+
+
+        .container-fluid.official.job-official
+            .container
+                .row
+                    .col-md-1
+                    .col-md-6
+                        h2 Нет значения с какой ты страны, пиши нам и мы моментально ответим тебе!
+
+        .affix-panel
+            form
+                input(type='text' placeholder='Ваше имя' class='error')
+                input(type='text' placeholder='E-mail')
+                input(type='text' placeholder='Ваш телефон')
+                input(type='text' placeholder='Ссылка на резюме')
+                input(type='text' placeholder='Немного о себе')
+                a(class='button' title='' href='') Отправить
+    section.univ-about
+        .container.border-bottom.border-bottom2
+            .row.justify-content-center
+                .col-md-10
+                    h2 other vacancies
+                    .slider
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+                        a(href='' title='').service-container
+                            .service-container--image
+                                img(src='img/service/service1.png' title='')
+                            .service-container--description
+                                h3 Приглашение на обучение в Украину
+                                p Приглашение на обучение — официальный документ, который выдает ваш университет. Его формат определяет Министерство образования и науки Украины. Без приглашения на обучение невозможно получить студенческую визу.
+                                span.button Show more
+
+
+

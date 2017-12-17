@@ -3385,6 +3385,24 @@ header.header-contact p {
 	margin-bottom: 10px;
 	font-size: 1em;
 }
+header.header-job h1 {
+	margin-bottom: 1rem;
+}
+.header-job--back {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+}
+.header-job--arrow {
+	position: absolute;
+	display: block;
+	bottom: -144px;
+	left: 0;
+}
+.header-job--arrow .fa {
+	color: #fff;
+}
 footer {
 	background: #001825;
 	padding-top: 39px;
@@ -5892,4 +5910,55 @@ footer .button {
 }
 .team-contacts .team-container:focus {
 	outline: none;
+}
+#job {
+	background: #fff;
+}
+#job .affix-panel {
+	background: #f9f9f9;
+}
+#job .affix-panel form input {
+	background: #fff;
+	border-color: #e2e2e2;
+}
+#job .affix-panel form .button {
+	background: #fc0;
+}
+#job .affix-panel form .button:hover {
+	background: #fff;
+}
+.job-article h2 {
+	margin-bottom: 20px;
+}
+.job-article p {
+	margin-bottom: 40px;
+	font-size: 1.125rem;
+}
+.job-article h3 {
+	color: #000;
+	margin-bottom: 40px;
+}
+.job-article ul {
+	margin-left: 15px;
+}
+.job-article ul li {
+	font-size: 1.125rem;
+	margin-bottom: 28px;
+}
+.job-article--section {
+	border-top: 1px solid #e2e2e2;
+	padding-top: 46px;
+	padding-bottom: 20px;
+}
+.job-official {
+	margin-top: 50px;
+	background: url('../img/jobs/job-back.png') no-repeat 20% #fc0;
+}
+@media (min-width: 1600px) {
+	.job-official {
+		background: url('../img/jobs/job-back.png') no-repeat 35% #fc0;
+	}
+}
+.job-official h2 {
+	color: #fff;
 }

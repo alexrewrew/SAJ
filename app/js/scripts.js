@@ -199,6 +199,16 @@ $(document).ready(function () {
         $(this).toggleClass('open');
     })
 
+    // ANCHOR LINKS SCROLLING
+    $(".smooth").click(function (event) {
+        event.preventDefault();
+        var id = $(this).attr("href"),
+            top = $(id).offset().top - 70;
+        $("body,html").animate({
+            scrollTop: top
+        }, 1500);
+    });
+
 });
 
 // !!! RESPONSIVE SCRIPTS !!!

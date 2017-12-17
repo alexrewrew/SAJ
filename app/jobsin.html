@@ -59,7 +59,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
   </head>
-  <body id="index">
+  <body>
     <nav>
       <div class="container">
         <div class="row">
@@ -191,21 +191,87 @@
     </nav>
     <main>
       <!--include ../partials/_header.pug-->
-      <section class="service services-page">
-        <header class="header-regular">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-10">
-                <h1>Services and price</h1>
-                <p>Вы можете выбрать удобный для вас пакет и с легкостью<br>начать европейское образование уже сегодня</p>
+      <header class="header-univer header-job">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-10 header-heading">
+              <h1>Sales Manager wanted</h1>
+              <p>in our friendly team this place is for you</p><a class="smooth header-job--arrow" href="#job" title=""><i class="fa fa-long-arrow-down"></i></a>
+            </div>
+          </div>
+        </div><img class="header-job--back" src="img/jobs/job-head.png">
+      </header>
+      <section class="univ-main" id="job">
+        <div class="container degree">
+          <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 job-article">
+              <h2>Sales Manager wanted</h2>
+              <p>in our friendly team this place is for you</p>
+              <p><b>Study & Journey</b> - образовательное агентство полного цикла.
+                Мы помогаем абитуриентам и студентам поступить в зарубежные университеты.<br>Наша миссия оказать помощь в выборе обучающей программы и подборе правильного учебного заведения зарубежом.
+                А само поступление в университет сделать легким и комфортным.
+              </p>
+              <p>Мы растем и нам нужен -<b> Менеджер по продажам образовательных программ.</b></p>
+              <div class="job-article--section">
+                <h3>С НАМИ ТЫ БУДЕШЬ</h3>
+                <ul>
+                  <li>- Зарабатывать от 1000$;</li>
+                  <li>- Путешествовать, организовывая образовательные выставки по учебным заведениям;</li>
+                  <li>- Ну и естественно очень круто прокачаешь себя.</li>
+                </ul>
+              </div>
+              <div class="job-article--section">
+                <h3>ТРЕБОВАНИЯ</h3>
+                <ul>
+                  <li>- Владение английским языком на уровне не ниже Upper-Intermediate;</li>
+                  <li>- Хорошие коммуникативные навыки, грамотная и уверенная речь;</li>
+                  <li>- Нацеленность на результат, умение убеждать;</li>
+                  <li>- Ответственность, быстрая обучаемость,</li>
+                  <li>- Позитивное мышление, проактивность.</li>
+                </ul>
+              </div>
+              <div class="job-article--section">
+                <h3>Обязанности:</h3>
+                <ul>
+                  <li>- Работа с текущей базой клиентов;</li>
+                  <li>- Общение с клиентами посредством деловой переписки, IP телефонии;</li>
+                  <li>- Работа с CRM;</li>
+                  <li>- Проведение презентаций, переговоров с потенциальными клиентами;</li>
+                  <li>- Работа с консульствами: подготовка пакетов документов для визы;</li>
+                  <li>- Поиск  и привлечение новых клиентов.</li>
+                </ul>
               </div>
             </div>
           </div>
-        </header>
-        <div class="container">
+        </div>
+        <div class="container-fluid official job-official">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-6">
+                <h2>Нет значения с какой ты страны, пиши нам и мы моментально ответим тебе!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="affix-panel">
+          <form>
+            <input class="error" type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="text" placeholder="Ссылка на резюме">
+            <input type="text" placeholder="Немного о себе"><a class="button" title="" href="">Отправить</a>
+          </form>
+        </div>
+      </section>
+      <section class="univ-about">
+        <div class="container border-bottom border-bottom2">
           <div class="row justify-content-center">
-            <div class="col-lg-10">
-              <div class="services-page--container"><a class="service-container" href="" title="">
+            <div class="col-md-10">
+              <h2>other vacancies</h2>
+              <div class="slider"><a class="service-container" href="" title="">
                   <div class="service-container--image"><img src="img/service/service1.png" title=""></div>
                   <div class="service-container--description">
                     <h3>Приглашение на обучение в Украину</h3>
@@ -336,6 +402,32 @@
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/vendor.js"></script>
       <script type="text/javascript" src="js/scripts.js"></script>
+      <script type="text/javascript">
+        $(window).on('load resize', function () {
+            if (window.matchMedia('(min-width: 992px)').matches) {
+                $(function () {
+                    var topPos = $('.affix-panel form').offset().top;
+                    $(window).scroll(function () {
+                        var top = $(document).scrollTop(),
+                            pip = $('.univ-about').offset().top,
+                            height = $('.affix-panel form').outerHeight();
+                        if (top > topPos && top < pip - height) {
+                            $('.affix-panel form').addClass('fixed').removeAttr("style");
+                        }
+                        else if (top > pip - height) {
+                            $('.affix-panel form').removeClass('fixed').css({
+                                'position': 'absolute',
+                                'bottom': '0'
+                            });
+                        }
+                        else {
+                            $('.affix-panel form').removeClass('fixed');
+                        }
+                    });
+                });
+            }
+        });
+      </script>
     </main>
   </body>
 </html>
