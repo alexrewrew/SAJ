@@ -2843,6 +2843,12 @@ nav.nav-white .menu li a {
 		display: none;
 	}
 }
+.nav-secondary h4 a {
+	color: #000;
+}
+.nav-secondary h4 a:hover {
+	color: #068edc;
+}
 .nav-secondary.open {
 	-webkit-transform: translateX(0);
 	    -ms-transform: translateX(0);
@@ -4842,6 +4848,11 @@ footer .button {
 .services-page--container .service-container {
 	max-width: 300px;
 	margin: 0 0 31px;
+}
+@media (max-width: 767px) {
+	.services-page--container .service-container {
+		max-width: unset;
+	}
 }
 .slider-big {
 	-webkit-box-shadow: 0 3px 46px 0 rgba(0,0,0,.15) !important;
